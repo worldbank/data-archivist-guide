@@ -27,7 +27,7 @@ docs/
 ├── .vitepress/
 │   └── config.ts       # Site configuration and navigation
 ├── public/
-│   └── media/          # Images (symlinked from __sphinx/media)
+│   └── media/          # Guide images
 ├── index.md            # Home page
 └── *.md                # Guide chapters
 ```
