@@ -3,11 +3,8 @@ layout: home
 
 hero:
   name: Quick Reference Guide for Data Archivists
-  text: IHSN / World Bank
   tagline: Guidelines to document a micro-dataset in compliance with DDI-C and DCMI metadata standards using the World Bank Metadata Editor.
-  image:
-    src: /media/image1.png
-    alt: IHSN
+  
   actions:
     - theme: brand
       text: Get Started
