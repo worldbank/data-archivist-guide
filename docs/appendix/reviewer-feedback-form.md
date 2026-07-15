@@ -1,7 +1,5 @@
 # IHSN DDI Reviewers' Feedback Form
 
-The following Form is available at www.surveynetwork.org
-
 ![image](/media/image16.png)
 
 ![image](/media/image17.png)
@@ -36,6 +34,4 @@ The following Form is available at www.surveynetwork.org
 
 ![image](/media/image32.png)
 
-![image](/media/image33.png)
-
-![image](/media/image34.png)
+![image](/media/quality_assessment19.png)

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Quick Reference Guide for Data Archivists
   text: IHSN / World Bank
-  tagline: Guidelines to document a micro-dataset in compliance with DDI and DCMI metadata standards using the World Bank Metadata Editor.
+  tagline: Guidelines to document a micro-dataset in compliance with DDI-C and DCMI metadata standards using the World Bank Metadata Editor.
   image:
     src: /media/image1.png
     alt: IHSN
@@ -14,7 +14,7 @@ hero:
       link: /introduction
     - theme: alt
       text: Metadata Editor Docs
-      link: https://metadata-editor.readthedocs.io/en/latest/
+      link: https://worldbank.github.io/metadata-editor-docs/
 
 features:
   - title: 10-Step Process
@@ -22,7 +22,7 @@ features:
   - title: DDI & DCMI Standards
     details: Document micro-datasets in compliance with international metadata specifications.
   - title: Metadata Editor
-    details: Built for the World Bank Metadata Editor — familiar to Nesstar Publisher users.
+    details: A multi-standard open-source metadata editor for generating rich and structured metadata that complies with international metadata standards and schemas.
 ---
 
 ## About This Guide

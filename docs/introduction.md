@@ -1,10 +1,10 @@
 # Introduction
 
-This *Quick Reference Guide for Data Archivists* provides data archivists with guidelines to document a micro-dataset in compliance with the Data Documentation Initiative (DDI) and the Dublin Core (DCMI) metadata standards[^1], using the World Bank Metadata Editor.
+This *Quick Reference Guide for Data Archivists* provides data archivists with guidelines to document a micro-dataset in compliance with The Data Documentation Initiative Codebook ([DDI Codebook/DDI-C](https://ddialliance.org/ddi-codebook)) and The Dublin Core Metadata Initiative ([DCMI](https://www.dublincore.org/specifications/dublin-core/dces/)) metadata standards[^1], using the [World Bank Metadata Editor](https://worldbank.github.io/metadata-editor-docs/).
 
-The World Bank Metadata Editor is an application designed to help document data collection operations undertaken for different kinds of research projects. The application is developed as an open-source tool by the World Bank. A number of Metadata standards recognized as global models for defining and describing different types of data have been integrated into the Metadata Editor, these are: The Data Documentation Initiative (DDI Codebook), The Dublin Core Metadata Initiative (DCMI) and the ISO 19139 for geospatial data.
+The World Bank Metadata Editor is a multi-standard open-source metadata editor developed by the World Bank, for generating rich and structured metadata that complies with international metadata standards and schemas. Integrated in to the Metadata editor are a number of Metadata standards that are recognized as global models for defining and describing different types of data. These standards include The DDI-Codebook, The Dublin Core Metadata Initiative (DCMI) and the ISO 19139 for geospatial data. Out of the box, the Metadata Editor supports the documentation of survey data, time series data, geospatial data, statistical tables, images, videos, analytical scripts and standalone publications or documents.
 
-The Metadata Editor is modelled on the Nesstar Publisher. As such it should provide a familiar environment for the Nesstar users. As an added benefit, the Metadata Editor is flexible and can support the documentation of multiple-data types. Out of the box it supports the documentation of survey data, time series data, geospatial data, statistical tables, images, analytical scripts and standalone publications or documents.
+For users who have previously documented microdata using Nesstar Publisher, the Metadata Editor is in part modelled on the Nesstar Publisher so it should provide a familiar environment.  
 
 This Guide summarizes the process in 10 chronological steps:
 
@@ -19,8 +19,6 @@ This Guide summarizes the process in 10 chronological steps:
 9.  Quality assessment
 10. Producing the output for publication
 
-Also provided (in appendix) is the *IHSN DDI Reviewers' Feedback Form* which provides a standard tool for the assessment of survey metadata by an external reviewer.
+This Guide is not a Metadata Editor reference or training manual. It is assumed that users are already familiar with the Editor. A *Metadata* *Editor User Guide* is available at <https://worldbank.github.io/metadata-editor-docs/>.
 
-This Guide is not a Metadata Editor reference or training manual. It is assumed that users are already familiar with the Editor. A *Metadata* *Editor User's Guide* is available at <https://metadata-editor.readthedocs.io/en/latest/>.
-
-[^1]: DDI (Data Documentation Initiative) and DCMI (Dublin Core Metadata Initiative) are international XML metadata specifications. For more information on these standards and on the IHSN Toolkit, please visit [www.surveynetwork.org](http://www.surveynetwork.org).
+[^1]: DDI-Codebook (DDI-C) and DCMI (Dublin Core Metadata Initiative) are international XML metadata specifications. For more information on these standards and on the IHSN Toolkit, please visit [www.ihsn.org](http://www.ihsn.org).
