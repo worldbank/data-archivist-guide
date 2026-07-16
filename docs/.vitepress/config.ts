@@ -2,13 +2,12 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Guide for Data Archivists',
-  description: 'Quick Reference Guide for Data Archivists — IHSN / World Bank',
+  description: 'Quick Reference Guide for Data Archivists',
   lang: 'en-US',
   cleanUrls: true,
   lastUpdated: true,
 
-  themeConfig: {
-    logo: '/media/image1.png',
+  themeConfig: {   
     siteTitle: 'Data Archivist Guide',
 
     nav: [
@@ -43,7 +42,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'International Household Survey Network (IHSN)',
+      message: 'World Bank',
       copyright: 'Copyright © 2018 Olivier Dupriez, Diana Marcela Sanchez Castro, Matthew Welch',
     },
 

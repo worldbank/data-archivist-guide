@@ -19,3 +19,5 @@ Variable groups also have their own DDI elements which include Type, Label, Text
 | Definition | This optional field is used to<br>define the variable group. |
 | Universe | This optional field defines the<br>universe relevant to the selected<br>grouped variables. The variables<br>for example can be grouped as<br>“Fertility Data” and the universe<br>restricted to women between the<br>ages of 15-49. |
 | Notes | Additional space for further<br>optional explanatory notes. |
+
+For more information on creating variable groups in the Metadata Editor, see the Documenting Data → Microdata → Import and document the dataset → [Variable groupings](https://worldbank.github.io/metadata-editor-docs/documenting_microdata_import_document.html#variable-groupings) section of the documentation.
