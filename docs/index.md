@@ -2,8 +2,9 @@
 layout: home
 
 hero:
-  name: Quick Reference Guide for Data Archivists
-  tagline: Guidelines to document a micro-dataset in compliance with DDI-C and DCMI metadata standards using the World Bank Metadata Editor.
+  name: Quick Reference Guide for Microdata Archivists
+  tagline: World Bank Group Chief Statistician's Office
+  text: Documentation using DDI-C and DCMI Metadata Standards.
   
   actions:
     - theme: brand
@@ -12,22 +13,25 @@ hero:
     - theme: alt
       text: Metadata Editor Docs
       link: https://worldbank.github.io/metadata-editor-docs/
+    - theme: alt
+      text: NADA Documentation
+      link: hhttps://nada.ihsn.org/
 
 features:
-  - title: 10-Step Process
-    details: A chronological workflow from gathering data through quality assessment and publication.
-  - title: DDI & DCMI Standards
-    details: Document micro-datasets in compliance with international metadata specifications.
+  - title: 8-Step Process
+    details: A chronological workflow from gathering data and documentation through quality assessment and publication.
+  - title: DDI-C & DCMI Standards
+    details: Document micro-datasets in compliance with international metadata specifications - Data Documentation Initiative (DDI-Codebook) and Dublin Core Metadata Initiative (DCMI).
   - title: Metadata Editor
     details: A multi-standard open-source metadata editor for generating rich and structured metadata that complies with international metadata standards and schemas.
 ---
 
 ## About This Guide
 
-**Version 2019-04**
+**Version 2026-07**
 
-**Authors:** Olivier Dupriez, Diana Marcela Sanchez Castro, Matthew Welch (The World Bank)
+**Authors:** The World Bank Group Chief Statistician's Office - Development Data Group (DECDG)
 
-The production of this guide was made possible through a grant from the TFSCB - DFID funding to the World Bank P167116/TF0A7461.
+**Acknowledgments:** This guide builds upon earlier versions of the Quick Reference Guide for Data Archivists published by the International Household Survey Network (IHSN)[^1] and authored by Olivier Dupriez, Diana Marcella Sanchez Castro, and Matthew Welch (The World Bank). Their contributions to the original structure, content, and conceptual development of this guidance are gratefully acknowledged.
 
-**Acknowledgments:** Francois Fonteneau (PARIS21), Geoffrey Greenwell (PARIS21), Chris Rockmore (World Bank) and Jan Smit (ESCAP) provided valuable input to an earlier version of the document. Trevor Croft (UNICEF) provided many of the examples of good practices for completing survey metadata.
+[^1]: The World Bank, Development Data Group (DECDG) is a member of the IHSN Secretariat.
