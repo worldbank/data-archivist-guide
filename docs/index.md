@@ -18,7 +18,7 @@ hero:
       link: hhttps://nada.ihsn.org/
 
 features:
-  - title: 8-Step Process
+  - title: 9-Step Process
     details: A chronological workflow from gathering data and documentation through quality assessment and publication.
   - title: DDI-C & DCMI Standards
     details: Document micro-datasets in compliance with international metadata specifications - Data Documentation Initiative (DDI-Codebook) and Dublin Core Metadata Initiative (DCMI).
