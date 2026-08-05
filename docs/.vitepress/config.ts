@@ -7,6 +7,9 @@ export default defineConfig({
   lang: 'en-US',
   cleanUrls: true,
   lastUpdated: true,
+  ignoreDeadLinks: [
+    '/media/microdata-documentation-quality-review-checklist-checkboxes.docx'
+  ],
 
   markdown: {
     config: (md) => {

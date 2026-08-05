@@ -15,7 +15,7 @@ The Metadata Editor is equipped with a built-in AI assisted metadata assessment 
 
 This checklist is designed to support the review of survey microdata documentation before publication, dissemination, or long-term preservation. It can be used to assess whether metadata prepared using the DDI-Codebook (DDI-C) and Dublin Core Metadata Initiative (DCMI) standards is complete, consistent, clear, and usable by data users, data catalogs, repositories, and AI-enabled discovery tools.
 
-The checklist is organized around the main metadata sections commonly used to document microdata: **Document Description**, **Study Description**, **Data Files**, **Variables**, **Variable Groups**, and **External Resources**. A final section is included for reviewing the dataset landing page or repository record before publication. A downloadable, editable version is available [here](/media/microdata-documentation-quality-review-checklist-checkboxes.docx). 
+The checklist is organized around the main metadata sections commonly used to document microdata: **Document Description**, **Study Description**, **Data Files**, **Variables**, **Variable Groups**, and **External Resources**. A final section is included for reviewing the dataset landing page or repository record before publication. A downloadable, editable version is available <a href="/media/microdata-documentation-quality-review-checklist-checkboxes.docx" download="quality-review-checklist.docx">here</a>. 
 
 ### How to Use This Checklist
 
