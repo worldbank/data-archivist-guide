@@ -1,4 +1,4 @@
-# Running validations and diagnostics
+# Running Validations and Diagnostics
 
 The Metadata Editor includes a useful series of diagnostic and validation modules (see the drop down menu *Tools*): these range from very simple validations (such as the *Tools-Validate Metadata*) to complex visual displays that iterate through each variable and provides feedback to the archivist at the variable level.
 

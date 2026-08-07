@@ -1,4 +1,4 @@
-# 8. Cataloging data, metadata and resources
+# 8. Cataloging Data, Metadata and Resources
 
 Once the data and metadata have been reviewed, validated, and approved, they are ready to be published in an online data catalog. Publishing data in a catalog makes them easier to discover, access, understand, and reuse by both internal and external audiences.
 

@@ -1,0 +1,7 @@
+/* Theme customizations go here */
+
+/* Reduce the size of the hero text */
+.VPHome .VPHero .text {
+  font-size: 2rem;
+  line-height: 1.2;
+}

@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Quick Reference Guide for Microdata Archivists
-  tagline: World Bank Group Chief Statistician's Office
-  text: Documentation using DDI-C and DCMI Metadata Standards.
+  tagline: World Bank Group Chief Statistician's Office (DECDG)
+  text: Advancing Data Preservation, Discovery, and Reuse with AI-Ready Data and Metadata
   
   actions:
     - theme: brand
@@ -15,7 +15,7 @@ hero:
       link: https://worldbank.github.io/metadata-editor-docs/
     - theme: alt
       text: NADA Documentation
-      link: hhttps://nada.ihsn.org/
+      link: https://nada.ihsn.org/
 
 features:
   - title: 9-Step Process

@@ -14,7 +14,7 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(footnote)
-    },
+    }
   },
 
   themeConfig: {   
@@ -33,55 +33,56 @@ export default defineConfig({
       {
         text: 'Quick Reference Guide for Microdata Archivists',
         items: [
-          { text: '1. Introduction', link: '/introduction' },
-          { text: '2. Before you start - organize your files', link: '/organizing-files' },
+          { text: 'Introduction', link: '/introduction' },
+          { text: '1. Organizing The Folder Structure', link: '/organizing-files' },
           {
-            text: '3. Gathering and preparing the data set',
+            text: '2. Gathering and Preparing the Data Set',
             link: '/preparing-data',
             collapsed: true,
             items:[
-{ text: '3.1. File organization', link: '/preparing-data#_3-1-data-files-should-be-organized-in-a-hierarchical-format' },
-{ text: '3.2. Check file structure and coverage', link: '/preparing-data#_3-2-check-file-structure-and-coverage' },
-{ text: '3.3. Verify record counts', link: '/preparing-data#_3-3-verify-that-the-number-of-records-in-each-file-corresponds-to-what-is-expected' },
-{ text: '3.4. Validate unique identifiers', link: '/preparing-data#_3-4-each-observation-in-every-file-must-have-a-unique-identifier' },
-{ text: '3.5. Check for duplicates', link: '/preparing-data#_3-5-identifying-duplicate-observations' },
-{ text: '3.6. Verify file relationships', link: '/preparing-data#_3-6-ensure-that-each-individual-dataset-can-be-combined-into-a-single-database' },
-{ text: '3.7. Validate data types', link: '/preparing-data#_3-7-check-that-the-data-types-are-correct' },
-{ text: '3.8. Check variables with missing values', link: '/preparing-data#_3-8-check-for-variables-with-missing-values' },
-{ text: '3.9. Validate value ranges', link: '/preparing-data#_3-9-check-improper-value-ranges' },
-{ text: '3.10. Verify weights and strata', link: '/preparing-data#_3-10-verify-weights-and-strata' },
-{ text: '3.11. Check variable and value labels', link: '/preparing-data#_3-11-variables-and-codes-for-categorical-variables-must-be-labelled' },
-{ text: '3.12. Assess variable relevance', link: '/preparing-data#_3-12-assess-variable-relevance' },
-{ text: '3.13. Verify file size', link: '/preparing-data#_3-13-compress-the-variables-to-reduce-the-file-size' },
-{ text: '3.14. Protect respondent privacy', link: '/preparing-data#_3-14-protect-respondent-privacy' }
+{ text: '2.1. File Organization', link: '/preparing-data#_2-1-data-files-should-be-organized-in-a-hierarchical-format' },
+{ text: '2.2. Check File Structure and Coverage', link: '/preparing-data#_2-2-check-file-structure-and-coverage' },
+{ text: '2.3. Verify Record Counts', link: '/preparing-data#_2-3-verify-that-the-number-of-records-in-each-file-corresponds-to-what-is-expected' },
+{ text: '2.4. Validate Unique Identifiers', link: '/preparing-data#_2-4-each-observation-in-every-file-must-have-a-unique-identifier' },
+{ text: '2.5. Check for Duplicates', link: '/preparing-data#_2-5-identifying-duplicate-observations' },
+{ text: '2.6. Verify File Relationships', link: '/preparing-data#_2-6-ensure-that-each-individual-dataset-can-be-combined-into-a-single-database' },
+{ text: '2.7. Validate Data Types', link: '/preparing-data#_2-7-check-that-the-data-types-are-correct' },
+{ text: '2.8. Check Variables with Missing Values', link: '/preparing-data#_2-8-check-for-variables-with-missing-values' },
+{ text: '2.9. Validate Value Ranges', link: '/preparing-data#_2-9-check-improper-value-ranges' },
+{ text: '2.10. Verify Weights and Strata', link: '/preparing-data#_2-10-verify-weights-and-strata' },
+{ text: '2.11. Check Variable and Value Labels', link: '/preparing-data#_2-11-variables-and-codes-for-categorical-variables-must-be-labelled' },
+{ text: '2.12. Assess Variable Relevance', link: '/preparing-data#_2-12-assess-variable-relevance' },
+{ text: '2.13. Verify File Size', link: '/preparing-data#_2-13-compress-the-variables-to-reduce-the-file-size' },
+{ text: '2.14. Protect Respondent Privacy', link: '/preparing-data#_2-14-protect-respondent-privacy' }
 ],
           },
-          { text: '4. Gathering and preparing the documentation', link: '/preparing-documentation' },
+          { text: '3. Gathering and Preparing the Documentation', link: '/preparing-documentation' },
           {
-            text: '5. Creating structured metadata',
+            text: '4. Documenting the Study, Data File(s) and Variables',
             link: '/creating-structured-metadata',
             collapsed: true,
             items: [
-              { text: '5.1. Document description', link: '/creating-structured-metadata#_5-1-good-practices-for-completing-the-document-description' },
-              { text: '5.2. Study description', link: '/creating-structured-metadata#_5-2-good-practices-for-completing-the-study-description' },
-              { text: '5.3. File description', link: '/creating-structured-metadata#_5-3-good-practices-for-completing-the-file-description' },
-              { text: '5.4. Variable description', link: '/creating-structured-metadata#_5-4-good-practices-for-completing-the-variable-description' },
-              { text: '5.5. Variable groups', link: '/creating-structured-metadata#_5-5-creating-variable-groups' },
+              { text: '4.1. Document Description', link: '/creating-structured-metadata#_4-1-good-practices-for-completing-the-document-description' },
+              { text: '4.2. Study Description', link: '/creating-structured-metadata#_4-2-good-practices-for-completing-the-study-description' },
+              { text: '4.3. File Description', link: '/creating-structured-metadata#_4-3-good-practices-for-completing-the-file-description' },
+              { text: '4.4. Variable Description', link: '/creating-structured-metadata#_4-4-good-practices-for-completing-the-variable-description' },
+              { text: '4.5. Variable Groups', link: '/creating-structured-metadata#_4-5-creating-variable-groups' },
             ],
           },
-          { text: '6. Creating external resource metadata', link: '/importing-resources' },    
-          { text: '7. Quality assessment', link: '/quality-review-checklist' },
-          { text: '8. Generating the survey documentation in PDF', link: '/pdf-documentation' },
-          { text: '9. Cataloging data, metadata and resources', link: '/pushing-to-nada' },
+          { text: '5. Documenting External Resources', link: '/documenting-resources' },
+          { text: '6. Quality Assessment', link: '/quality-review-checklist' },
+          { text: '7. Generating the Output for Publication', link: '/generating-output' },
+          { text: '8. Cataloging Data, Metadata and Resources', link: '/pushing-to-nada' },
+          { text: 'Conclusion', link: '/conclusion' },
         ],
       },
       {
         text: 'Appendix',
         items: [
-          { text: 'Data validations in stata', link: '/appendix/stata-validation' },
-          { text: 'Quality assessment and feedback form', link: '/media/microdata-documentation-quality-review-checklist-checkboxes.docx' },
+          { text: 'Data Validations in Stata', link: '/appendix/stata-validation' },
+          { text: 'Quality Assessment and Feedback Form', link: '/media/microdata-documentation-quality-review-checklist-checkboxes.docx' },
         ],
-      },
+      }      
     ],
 
     footer: {
