@@ -15,6 +15,50 @@ External resources are typically documented using the Dublin Core Metadata Initi
 - Format
 - Access location or URL
 
+### External Resources
+
+#### Resource Description
+
+| Field | DDI Element | Description | Example |
+|---|---|---|---|
+| Label | `label` | Hyperlink label. | Household Questionnaire |
+| Resource | `resource` | Link to resource. | documentation/questionnaire_household.pdf |
+| Type | `type` | Resource type. | Document Questionnaire |
+| Title | `title` | Resource title. | Household Questionnaire |
+| Subtitle | `subtitle` | Resource subtitle. | Wave 1 Education Module|
+| Date Created | `date` | Creation date. | 2024-06 |
+| Format | `format` | Digital format. | PDF |
+| Description | `description` | Resource description. | This is the education module of the household questionnaire for the survey...  |
+| Abstract | `abstract` | Resource abstract. | |
+| Table of Contents | `tableOfContents` | Table of contents. | CHAPTER 1 INTRODUCTION |
+
+### Creators and Contributors
+
+| Field | DDI Element | Description | Example |
+|---|---|---|---|
+| Author(s) | `creator` | Resource authors. | National Statistics Office |
+| Contributor(s) | `contributor` | Resource contributors. | World Bank |
+| Publisher(s) | `publisher` | Resource publishers. | National Statistics Office |
+
+### Coverage and Language
+
+| Field | DDI Element | Description | Example |
+|---|---|---|---|
+| Country | `country` | Covered country. | Uganda |
+| Language | `language` | Language used. | English |
+
+### Identifiers and Rights
+
+| Field | DDI Element | Description | Example |
+|---|---|---|---|
+| ID Number | `idno` | Document identifier |A DOI if one exists |
+| Rights | `rights` | Usage rights. | © 2017, Popstan Central Statistics Agency |
+
+### Subjects
+
+| Field | DDI Element | Description | Example |
+|---|---|---|---|
+| Subjects | `subjects` | Resource subjects. | Sampling; Questionnaire design; Fieldwork; Data processing |
 ### Why Is This Important?
 
 - Documenting external resources helps **preserve valuable contextual information that may not be captured within the data files themselves**.

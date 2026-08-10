@@ -26,12 +26,3 @@ features:
     details: A multi-standard open-source metadata editor for generating rich and structured metadata that complies with international metadata standards and schemas.
 ---
 
-## About This Guide
-
-**Version 2026-07**
-
-**Authors:** The World Bank Group Chief Statistician's Office - Development Data Group (DECDG)
-
-**Acknowledgments:** This guide builds upon earlier versions of the Quick Reference Guide for Data Archivists published by the International Household Survey Network (IHSN)[^1] and authored by Olivier Dupriez, Diana Marcella Sanchez Castro, and Matthew Welch (The World Bank). Their contributions to the original structure, content, and conceptual development of this guidance are gratefully acknowledged.
-
-[^1]: The World Bank, Development Data Group (DECDG) is a member of the IHSN Secretariat.

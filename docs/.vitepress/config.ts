@@ -33,6 +33,7 @@ export default defineConfig({
       {
         text: 'Quick Reference Guide for Microdata Archivists',
         items: [
+          { text: 'Acknowledgements', link: '/acknowledgements' },          
           { text: 'Introduction', link: '/introduction' },
           { text: '1. Organizing The Folder Structure', link: '/organizing-files' },
           {
