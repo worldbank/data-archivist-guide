@@ -2,9 +2,9 @@
 title: Microdata Documentation Quality Review Checklist
 description: A practical checklist for reviewing the completeness, consistency, quality, and usability of microdata metadata and supporting documentation.
 ---
-# 7. Independent quality review
+# 6. Quality Assessment
 
-An independent review of the data and metadata is highly recommended prior to publishing the final output. There are two recommended methods to conduct a review.
+An **independent review** of the data and metadata is highly recommended prior to publishing the final output. There are two recommended methods to conduct a quality assessment.
 
 ### I. Metadata Editor Assessment Tool
 
@@ -13,7 +13,7 @@ The Metadata Editor is equipped with a built-in AI assisted metadata assessment 
 
 ### II. Microdata Documentation Quality Review Checklist and Feedback Form
 
-This checklist is designed to support the review of survey microdata documentation before publication, dissemination, or long-term preservation. It can be used to assess whether metadata prepared using the DDI-Codebook (DDI-C) and Dublin Core Metadata Initiative (DCMI) standards is complete, consistent, clear, and usable by data users, data catalogs, repositories, and AI-enabled discovery tools.
+This checklist is designed to support the review of microdata documentation before publication, dissemination, or long-term preservation. It can be used to assess whether metadata prepared using the DDI-Codebook (DDI-C) and Dublin Core Metadata Initiative (DCMI) standards is complete, consistent, clear, and usable by data users, data catalogs, repositories, and AI-enabled discovery tools.
 
 The checklist is organized around the main metadata sections commonly used to document microdata: **Document Description**, **Study Description**, **Data Files**, **Variables**, **Variable Groups**, and **External Resources**. A final section is included for reviewing the dataset landing page or repository record before publication. A downloadable, editable version is available <a href="/media/microdata-documentation-quality-review-checklist-checkboxes.docx" download="quality-review-checklist.docx">here</a>. 
 
@@ -274,7 +274,7 @@ The **External Resources** section reviews supporting documentation and related 
 | Questionnaires | All questionnaire versions are provided in PDF and, where available, original editable formats. | ☐ Yes ☐ No ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
 | Supporting documentation | Relevant technical, methodological, administrative, and analytical documentation is provided. | ☐ Yes ☐ No ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
 | Programs and scripts | Data entry, editing, anonymization, tabulation, and analysis scripts are preserved where available. | ☐ All ☐ Some ☐ None ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
-| Survey reports | Survey reports and key analytical outputs are provided in PDF and, where available, original editable formats. | ☐ Yes ☐ No ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
+| Reports | Reports and key analytical outputs are provided in PDF and, where available, original editable formats. | ☐ Yes ☐ No ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
 | Links | All links to external resources are valid and use stable or relative paths where appropriate. | ☐ All ☐ Some ☐ None ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
 | Resource labels | Each external resource has a short, explicit, and user-friendly label. | ☐ All ☐ Some ☐ None |  | ☐ None ☐ Add ☐ Fix ☐ Check |
 | File formats | Preservation and access formats are appropriate, readable, and documented. | ☐ All ☐ Some ☐ None |  | ☐ None ☐ Add ☐ Fix ☐ Check |
@@ -387,3 +387,7 @@ Use this section to summarize cross-cutting quality issues that may affect the u
 | Final recommendation |  |
 | Follow-up required | ☐ Yes  ☐ No |
 | Follow-up owner |  |
+
+Once the quality assessment has been completed and you are satisfied that the metadata and associated resources meet the required standards, the next step is to generate the machine-readable metadata files for publication, cataloging, and sharing. These metadata files enable discovery, interoperability, and exchange across repositories and data catalogs.
+
+The next section explains how to generate standards-compliant, machine-readable metadata and prepare it for publication in online catalogs and other dissemination platforms.

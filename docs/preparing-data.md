@@ -1,4 +1,4 @@
-# 3. Gathering and preparing the data set
+# 2. Gathering and Preparing the Data Set
 
 Gathering and preparing data is a process that requires great care. Prior to documenting a dataset, it is important to ensure that you are working with the most appropriate version of all the concerned data files. If the dataset is meant for public release, one should work with the final, edited, anonymous version of the dataset. If the dataset is being documented for archiving and internal use only, one may include the raw data as well as the final, fully edited files. The Metadata Editor provides you with the possibility of documenting the specificity of each version of the dataset.
 
@@ -9,7 +9,7 @@ This section describes the various checks and balances involved in the data prep
 - Absence of variables that uniquely identify each record of the dataset
 - Duplicate observations
 - Errors from merging multiple datasets
-- Encountering incomplete data when comparing the content of the data files with the original survey questionnaire
+- Encountering incomplete data when comparing the content of the data files with the the source documentation, data collection instruments, data specifications, or system design documents
 - Unlabelled data
 - Variables with missing values
 - Unnecessary or temporary variables in the data files
@@ -21,7 +21,7 @@ Some practical examples using a statistical package are provided in [Section A: 
 
 The following procedures are recommended for preparing your dataset(s):
 
-## 3.1. Data files should be organized in a hierarchical format
+## 2.1. Data Files Should Be Organized in a Hierarchical Format
 
 Look at your data and visualize it to understand its structure. It is preferable to organize your files in a hierarchical format instead of a flat format. In a hierarchical format, columns contain specific information about all possible units of analysis and rows form the individual observations (households, establishments, products, communities/countries, or any combination of those). Hierarchical files are easier to analyse, as they contain fewer columns that store the same information and are more compact. A flat format contains multiple columns with information on only one specific unit of analysis, so the information becomes redundant. For example, the information provided in one column is about the household head, and the row provides information on the child in the household.
 
@@ -37,7 +37,7 @@ Look at your data and visualize it to understand its structure. It is preferable
 
 Hierarchical files are easier to manage. Suppose in this example that there were many characteristics measured for everyone, the hierarchical structure would be a more convenient format because for each new characteristic, the dataset creates only one additional column, whereas, in the flat structure, it would create as many columns as there are people in the data with such characteristics.
 
-### Datasets with multiple units of analysis should be stored in different data files
+### Datasets With Multiple Units of Analysis Should Be Stored in Different Data Files
 
 It is recommended that you store your data in different files when you have multiple observational units. For example, *Table 3* shows a dataset that has both household-level data (columns on the type of dwelling and walls material) and individual-level data (columns on the marital status, work status, and worker category). Note that storing both levels of information in one dataset will result in a repetition of household characteristics for each household member. In Table 3, the information about the columns 'type of dwelling' and 'wall material' is repeated for everyone. Sometimes, this duplication is inefficient, and it is easier to have the dataset broken down by observational unit, into multiple files. In this example, it would be simpler to create two files: one for the household characteristics and another for the individual characteristics. The two files can be connected through a unique identifier, which in this case will be the household ID and member ID. We discuss the need for this unique identifier further on in this text as well.
 
@@ -45,7 +45,7 @@ It is recommended that you store your data in different files when you have mult
 
 ![image](/media/Page5.png)
 
-### Columns in a dataset should represent variables, not values
+### Columns in a Dataset Should Represent Variables, Not Values
 
 It is recommended that columns represent variables (e.g., sex, age, marital status) and rows represent observations (e.g., individuals, households, firms, products and so forth). In some datasets, columns instead of describing variables or attributes, describe values, which means that one variable is broken into segments and each one is stored in different columns. While this dataset structure can be useful for some analysis, the standard data structure where columns are variables and not values is the norm.
 
@@ -55,23 +55,34 @@ For example, *Table 4* (options 1 and 2) gives information at the individual-lev
 
 ![image](/media/Page6_1.png)
 
-## 3.2. Check file structure and coverage
+## 2.2. Check File Structure and Coverage
+The dataset should contain all variables, fields, or attributes defined in the source documentation, data collection instruments, data specifications, or system design documents, except those intentionally excluded for reasons such as confidentiality, privacy protection, legal restrictions, or data minimization requirements.
 
-The Dataset should contain all the variables from the questionnaire - except those excluded on purpose by the producer of the data because of reasons of confidentiality. Verify the completeness of your data files by comparing the content of these files with all sections of the survey questionnaire. Variables should be organized in a logical sequence that reflects the questionnaire flow.This practice will help users navigate seamlessly across the dataset using the questionnaire as a route map.
+Verify the completeness of the data files by comparing their contents with the relevant source documentation, including questionnaires, forms, administrative records, data collection instruments, data dictionaries, system specifications, codebooks, or metadata documentation. This review helps ensure that all expected variables have been captured and appropriately documented.
 
-The Stata command *-describe-* displays the names, variable labels and other characteristics, which helps us verify that no variables have been omitted in the database. It simultaneously confirms that all variables are correctly ordered. Refer to [Example 7](/appendix/stata-validation) for further details.
+Variables should be organized in a logical and consistent manner that reflects the structure of the data source, business process, or data production workflow. For example, variables may be grouped by subject area, module, record type, processing stage, or functional domain. A well-organized dataset makes it easier for users to understand relationships among variables, navigate the data efficiently, and connect the data to the supporting documentation.
 
-## 3.3. Verify that the number of records in each file corresponds to what is expected
+Data management tools can be used to generate an inventory of variables, including their names, labels, data types, formats, and other characteristics. Reviewing this inventory helps verify that no variables have been omitted, that metadata are complete and accurate, and that variables are organized consistently across files. This process also provides an opportunity to identify duplicate, undocumented, or improperly labeled variables before the data are archived or disseminated. 
 
-The technical documentation helps to form some expectations about the size of the dataset. Make sure that in all the files, the number of records is the same as (or is similar to) what is explicitly stated in the sample design of your survey.
+Example: The Stata command *-describe-* displays the names, variable labels and other characteristics, which helps us verify that no variables have been omitted in the database. It simultaneously confirms that all variables are correctly ordered. Refer to [Example 7](/appendix/stata-validation) for further details.
 
-Suppose that you have a household survey and according to the documentation the sample size is 50,321 households. Consequently, the file that contains the household-level information should have a similar number of observations. When this is not the case, you should be able to account for this difference in data documentation.
+## 2.3. Verify That the Number of Records in Each File Corresponds to Expectations
+The technical and methodological documentation should provide enough information to establish reasonable expectations about the size and structure of the dataset. Verify that the number of records in each file is consistent with what is described in the documentation, data production process, or source systems.
 
-On the other hand, even if the number of individual records is not available in the documentation, you can still perform a rough check on the files. For example, if you have the household level file and the person level file, the latter should be between 2 or 6 times larger than the former, depending on the average household size in the country for which the information has been collected. Another example is to compare the household level file of an expenditure survey with the consumption level file (at the product-level).
+For example, if the documentation states that a dataset contains records for 50,321 households, establishments, businesses, facilities, beneficiaries, or other units of observation, the corresponding data file should contain a similar number of records. If discrepancies exist, they should be explained and documented.
 
-The latter should have n times the number of observations than the former, where n is the average number of products that each household records in the survey.
+Even when expected record counts are not explicitly provided, it is often possible to perform reasonableness checks by examining the relationships between files. For example:
 
-## 3.4. Each observation in every file must have a unique identifier
+A file containing individual-level records would typically contain multiple records for each household-level record.
+A transaction-level file would generally contain more records than the file containing the entities associated with those transactions (for example, customers, firms, facilities, or beneficiaries).
+An event-level file would typically contain multiple records for each subject, case, or reporting unit represented in a master file.
+A file containing service encounters, claims, purchases, assessments, visits, or observations would generally contain more records than the file containing the persons, households, organizations, or locations associated with those records.
+
+When datasets contain hierarchical relationships, the number of records in lower-level files should be broadly consistent with the documented structure of the data and the expected number of related records per unit. Significant deviations may indicate missing data, duplicate records, processing errors, or incomplete extracts and should be investigated and documented.
+
+These checks help confirm that all expected records have been captured and that the relationships between files are consistent with the documented design and intended use of the data.
+
+## 2.4. Each Observation in Every File Must Have a Unique Identifier
 
 Before you check for uniqueness of the identifiers in your files, you need to figure out the unit of analysis. Even if you are not the data producer, it is often easy to identify it. You can always review the documentation to see if the information has been provided. Below, some examples of units of analysis:
 
@@ -86,13 +97,13 @@ The absence of a unique identifier is a data quality issue, so one needs to ensu
 ::: tip Best Practices
 - It is recommended that ID variables be defined as a numeric since sorting and filtering records is much more efficient when variables are numeric.
 - ID variables should not contain spaces, special characters or accents, since they may suffer modifications when the dataset is converted in different formats.
-- For the convenience of users of the data, avoid identifiers consisting of too many variables. For example, in a household survey, the household identifier should ideally be a single variable (which you may create by concatenating a group of variables), and the individual identifier should be the combination of only two variables (the household ID, and the sequential number of each member).
+- For the convenience of users of the data, avoid identifiers consisting of too many variables. For example, in a household-level microdata file, the household identifier should ideally be a single variable (which you may create by concatenating a group of variables), and the individual identifier should be the combination of only two variables (the household ID, and the sequential number of each member).
 - It is recommended that you generate an ID based on a sequential number, however, keep in mind that it should not be too long because statistical packages and spreadsheet programs store a number of digits of precision, so opening a data set that contains ID variables with many characters, might result in truncated fields. For instance, the limit of the number of characters in Microsoft Excel is 15, so it changes any digits past the fifteenth place to zeroes.
 - If you prepare your data files for public dissemination, it may be preferable to generate a unique household identification that would **not** be a compilation of geographic codes (because geographic codes are highly identifying). This recommendation is to ensure anonymity and will be explained in further detail later on in this text. The following example shows how to construct a unique identifier without using detailed information provided by
 the geographic codes.
 :::
 
-### Example: Creating a unique identifier
+### Example: Creating a Unique Identifier
 
 Suppose the unique identification of a household is a combination of variables PROV (Province), DIST (District), EA (Enumeration Area), HHNUM (Household Number). Options 2 and 3 are recommended. Note that if option 3 is chosen, it is crucial to preserve (but not distribute) a file that would provide the mapping between the original codes and the new HHID.
 
@@ -156,13 +167,13 @@ Load dataset and choose from the menu:
 
 *Example 3* in [Section A: Data Validations in Stata](/appendix/stata-validation) provides further details and describes the steps involved in performing a validation when the identifier is made of multiple variables.
 
-## 3.5. Identifying duplicate observations
+## 2.5. Identifying Duplicate Observations
 
 One way to rule out problems with the unique identifier is to check if there are duplicate observations (records with identical values for all variables, not just the unique identifiers). Duplicate observations can generate erroneous analysis and cause data management problems. Some possible reasons for duplicate data are, for example, the same record being entered twice during data collection. They could also arise from an incorrect reading of the questionnaires during the scanning process if paper-based methods are being used.
 
 Identifying duplicate observations is a crucial step. Correcting this issue may involve eliminating the duplicates from the dataset or giving them some other appropriate treatment.
 
-Statistical packages have several commands that help identify duplicates. *Table 8* shows examples of these commands in STATA, R and SPSS. The STATA command *-duplicates report-* generates a table that summarizes the number of copies for each record (across all variables). The command *-duplicates tag-* allows us to distinguish between duplicates and unique observations. For more details, refer to [Example 4](/appendix/stata-validation).
+Statistical packages have several commands that help identify duplicates. *Table 8* shows examples of these commands in STATA, R, Python and SPSS. The STATA command *-duplicates report-* generates a table that summarizes the number of copies for each record (across all variables). The command *-duplicates tag-* allows us to distinguish between duplicates and unique observations. For more details, refer to [Example 4](/appendix/stata-validation).
 
 **Table 8. Check for duplicates observations: STATA/R/PYTHON/SPSS commands**
 
@@ -199,9 +210,9 @@ Load dataset and choose from the menu:
 execute.
 ```
 
-## 3.6. Ensure that each individual dataset can be combined into a single database
+## 2.6. Ensure That Each Individual Dataset Can Be Combined into a Single Database
 
-For organizational purposes, surveys are often stored in different datasets. Therefore, checking the relationship between the data files is an essential step to keep in mind throughout the data validation process. The role of the data producer is to store the information as efficiently as possible, which implies storing data in different files. The role of the data user is to analyse the data as holistically as possible, which could sometimes mean that they might have to join all the different data files into a single file to facilitate analysis. It is essential to ensure that each of the separate files can be combined (merged or appended depending on the case) into a single file, should the data user want to undertake this step.
+For organizational purposes, microdata is often stored in different datasets. Therefore, checking the relationship between the data files is an essential step to keep in mind throughout the data validation process. The role of the data producer is to store the information as efficiently as possible, which implies storing data in different files. The role of the data user is to analyse the data as holistically as possible, which could sometimes mean that they might have to join all the different data files into a single file to facilitate analysis. It is essential to ensure that each of the separate files can be combined (merged or appended depending on the case) into a single file, should the data user want to undertake this step.
 
 Use statistical software to validate that all files can be combined into one. For a household survey, for example, verify that all records in the individual-level files have a corresponding household in the household-level master file. Also, verify that all households have at least one corresponding record in the household-roster file that lists all individuals. Below, some considerations to keep in mind before merging data files:
 
@@ -209,7 +220,7 @@ Use statistical software to validate that all files can be combined into one. Fo
 - The ID variables need to be the same type (either both numeric or both string) across all databases.
 - Except for ID variables, it is highly recommended that the databases don't share the same variable names or labels.
 
-### Example: Joining household and child datasets
+### Example: Joining Household and Child Datasets
 
 A household survey is disseminated in two datasets; one contains information about household characteristics and the other contains information on the children (administered only to mothers or caretakers). To build a dataset containing all the information about the household characteristics, including where the children live, one needs to combine these files. Users are thus assured that all observations in the child-level file have corresponding household information.
 
@@ -276,19 +287,19 @@ To combine datasets vertically, use the following
 - Python: *pd.concat(household, individuals)*
 - R: rbind(household, individuals) or bind_rows(household,individuals)
 
-## 3.7. Check that the data types are correct
+## 2.7. Check That the Data Types Are Correct
 
 Do not include string variables if they can be converted into numeric variables. Look at your data and check the variables' types, particularly for those that you expect to be numeric (age, years, number of persons/employees/hours, income, purchases/expenditures, weights, and so forth). If there are numeric variables stored as string variables, your data needs cleaning.
 
-For example, *Table 13* contains a data set at the individual-level with some variables that should be numeric. The columns B (Age) and E (Working Weeks) are stored as numeric variables, which is fine. However, the variables 'Number of working of hours per week' (Column G), 'Number of persons working at the business' (Column H) and 'Monthly Income' (Column I) are loaded as strings because there are non-numeric values (don't know, skip, refused to answer) and some missing values present. Those variables need to be cleaned and converted from string variables to numeric variables.
+For example, *Table 10* contains a data set at the individual-level with some variables that should be numeric. The columns B (Age) and E (Working Weeks) are stored as numeric variables, which is fine. However, the variables 'Number of working of hours per week' (Column G), 'Number of persons working at the business' (Column H) and 'Monthly Income' (Column I) are loaded as strings because there are non-numeric values (don't know, skip, refused to answer) and some missing values present. Those variables need to be cleaned and converted from string variables to numeric variables.
 
-**Table 13. Checking Data Types: Hypothetical data set**
+**Table 10. Checking Data Types: Hypothetical data set**
 
 ![image](/media/Page16.png)
 
-Statistical packages have some commands that allows us to make such conversions. *Table 14* shows examples of these commands/functions in STATA, R and SPSS.
+Statistical packages have some commands that allows us to make such conversions. *Table 11* shows examples of these commands/functions in STATA, R, PYTHON and SPSS.
 
-**Table 14. Convert string variables to numeric: STATA/R/PYTHON/SPSS commands**
+**Table 11. Convert string variables to numeric: STATA/R/PYTHON/SPSS commands**
 
 **STATA**
 
@@ -324,7 +335,7 @@ Load dataset and choose from the menu:
 - Select "Convert numeric strings to numbers ('5'->5)
 ```
 
-## 3.8. Check for variables with missing values
+## 2.8. Check for Variables With Missing Values
 
 Getting data ready for documentation also involves checking for variables that do not provide complete information because they are full of missing values. This step is important because missing values can have unexpected effects on the data analysis process. Typically, missing values are defined as a character (.a, .b, single period or asterisks), special numeric (-1, -2) or blanks. Variables entirely comprised of missing values should ideally not be included in the dataset. However, before excluding them, it is useful to check whether the missing values are expected according to the questionnaire, and the skip patterns.
 
@@ -332,13 +343,13 @@ For example, a hypothetical household survey at the individual-level (Table 10) 
 
 On the other hand, Columns F and G are used to determine if the people who are not employed are looking for a job and are actively seeking it. These questions are not asked to the employed people (those who answered "yes" in Column D), which mean that again, the missing values in those columns correspond with what is expected. However, Column H contains information for all employed individuals, so missing values in this column suggest that there is a problem in the data and should be addressed. Therefore, one should not blindly delete missing values at the outset without checking for these patterns.
 
-**Table 10. Checking for Missing Values: Hypothetical data set**
+**Table 12. Checking for Missing Values: Hypothetical data set**
 
 ![image](/media/Page12.png)
 
-In SPSS, use the function *"Missing Value Analysis"* and in R, do as shown in *Table 11*. You can also use the STATA command *-misstable summarize-* that produces a report that counts all the missing values. You can also use the *-rowmiss()-* command with *-egen-* to generate the number of missing values among the specified variables. For more details, refer to [Example 6](/appendix/stata-validation).
+In SPSS, use the function *"Missing Value Analysis"* and in R, do as shown in *Table 12*. You can also use the STATA command *-misstable summarize-* that produces a report that counts all the missing values. You can also use the *-rowmiss()-* command with *-egen-* to generate the number of missing values among the specified variables. For more details, refer to [Example 6](/appendix/stata-validation).
 
-**Table 11. Counting Missing Values: STATA/R/PYTHON/SPSS commands**
+**Table 13. Counting Missing Values: STATA/R/PYTHON/SPSS commands**
 
 **STATA**
 
@@ -387,15 +398,15 @@ code for "Don't Know", (-2) the code for "Refused to Answer" and
 (-9) code for "Not Applicable".
 :::
 
-## 3.9. Check improper value ranges
+## 2.9. Check Improper Value Ranges
 
 It is helpful to generate descriptive statistics for all variables (frequencies for discrete variables; min/max/mean for continuous variables) and verify that these statistics look reasonable. Just as there are variables that must take on only specific values, such as "F" and "M" for gender, there are also some variables that can take on several values (such as age or height). However, those values must fit a particular range. For example, we don't expect negative values, or typically see values over 115 years for age.
 
-Values for categorical variables should be guided by the questionnaire (or separate documentation for constructed variables). If we have an education variable that has 9 response options in the questionnaire, the corresponding 'education' variable in the dataset should have 9 categories. We should not observe more than 9 unique values for this variable. Similarly, for any questions in the survey for which the options are only "yes", "no" and "other", we should not observe more than these 3 unique values. When out of range values exist, this might signal data cleaning issues.
+Values for categorical variables should be guided by the questionnaire (or separate documentation for constructed variables). If we have an education variable that has 9 response options in the questionnaire, the corresponding 'education' variable in the dataset should have 9 categories. We should not observe more than 9 unique values for this variable. Similarly, for any questions for which the options are only "yes", "no" and "other", we should not observe more than these 3 unique values. When out of range values exist, this might signal data cleaning issues.
 
-*Table 12* shows examples of some commands/functions in STATA, R and SPSS.
+*Table 14* shows examples of some commands/functions in STATA, R, PYTHON and SPSS.
 
-**Table 12. Generate descriptive statistics: STATA/R/PYTHON/SPSS Commands**
+**Table 14. Generate descriptive statistics: STATA/R/PYTHON/SPSS Commands**
 
 **STATA**
 
@@ -427,26 +438,30 @@ from the menu:
 - Select “Statistics"
 ```
 
-## 3.10. Verify weights and strata
+## 2.10. Verify Weights, Design Variables, and Adjustment Factors (Where Applicable)
 
-Include the relevant weighting coefficients and variables identifying the stratification levels
+Some microdata collections include weights, adjustment factors, or design variables that are required for producing valid estimates and analyses. Where such variables exist, verify that they are included in the dataset, clearly labeled, properly documented, and consistent with the accompanying methodology documentation.
 
-All data files of a sample survey should have clearly labelled variable(s) with information on the survey weights. Sample surveys need to be representative of a broader population for which the data is collected, and the user needs the survey weights for almost every analysis performed. In the case of household surveys, the survey weights are equal among members of the same household but differ across households. Weights are positive and strictly higher than zero. They should not have a larger value than the population for which the survey is representative.
+For sample-based datasets, weighting variables are often provided to enable users to produce estimates that are representative of a larger target population. In these cases, the documentation should clearly describe how the weights were constructed, how they should be applied, and any limitations associated with their use. Basic validation checks, such as reviewing minimum and maximum values, identifying missing values, and confirming alignment with the documented methodology, can help detect potential issues.
 
-A more detailed description of how the survey weights would look like should be provided in the documentation of the survey. Based on it, you can perform some basic range checks. Notice that Census datasets do not need weights since a census collects data on all the individuals in the population. There are however some exceptions, for example in the case of IPUMS, the data collected are not full censuses but census samples, so weights are required in this context.
+In some datasets, adjustment factors may be included to account for non-response, calibration, post-stratification, benchmarking, or other statistical corrections. Where applicable, these factors should be clearly identifiable and adequately documented.
 
-Additionally, for sample surveys, verify that the variables identifying the various levels of stratification and the primary sampling unit are included and easily identifiable in at least one of the data files. These variables are needed for the calculation of sampling errors.
+Not all microdata require weights. For example, administrative records, transaction data, operational systems, registries, and complete censuses may not include weighting variables because they are intended to represent the full population of interest or are not derived from a sample. However, even in these cases, any transformations, adjustment factors, or derived analytical variables used to support analysis should be documented and preserved.
 
-## 3.11. ariables and codes for categorical variables must be labelled
+Where the data are based on a sample design (surveys), verify that the variables identifying stratification levels, clusters, primary sampling units, or other design elements are included and clearly documented. These variables are often necessary for estimating sampling errors and producing statistically valid analyses.
 
-**Variable labels**
+More generally, ensure that any variables required to correctly interpret, aggregate, weight, or analyze the data are present, clearly identifiable, and accompanied by sufficient documentation to support their appropriate use by data users.
 
-Variable labels should be concise, precise, and informative. They provide a clear description of the information contained in a variable and help users understand how the data relate to the corresponding survey questions. Without meaningful variable labels, it can be difficult to interpret the contents of a dataset or link variables back to the questionnaire. Therefore, all variables should be clearly labelled.
+## 2.11. Variables and Codes for Categorical Variables Must Be Labelled
+
+**Variable Labels**
+
+Variable labels should be concise, precise, and informative. They provide a clear description of the information contained in a variable and help users understand how the data relate to the corresponding literal questions. Without meaningful variable labels, it can be difficult to interpret the contents of a dataset or link variables back to the questionnaire. Therefore, all variables should be clearly labelled.
 
 Even when variables are labelled, the following good practices should be followed:
 
 - Variable labels should be informative, accurate, and as concise as possible. While software packages may allow relatively long labels (for example, up to 80 characters in Stata and 255 characters in SPSS), shorter labels are generally easier to read and manage.
-- Avoid using the full survey question as a variable label. Literal questions are often lengthy and may exceed recommended label lengths. Instead, provide a brief description that captures the essence of the question.
+- Avoid using the full literal question as a variable label. Literal questions are often lengthy and may exceed recommended label lengths. Instead, provide a brief description that captures the essence of the question.
 - Each variable should have a unique label. The same label should not be used for different variables, as this can create confusion and make analysis more difficult.
 - Labels should clearly distinguish between related variables and use consistent terminology throughout the dataset.
 - Variable labels should complement, not replace, detailed variable descriptions. While labels provide a short summary, the **variable description**[^2] should capture the full wording of the question, interviewer instructions, concepts being measured, derivation methods, or any other contextual information needed to interpret the data correctly.
@@ -454,13 +469,13 @@ Even when variables are labelled, the following good practices should be followe
 
 [^2]: See [Variable Description](/creating-structured-metadata#variable-description) section under Creating Structured Metadata.
 
-**Value labels**
+**Value Labels**
 
 Label values are used for categorical variables. To ensure the correct encoding of data, it is important to check that the stored values in those variables correspond to what is expected according to the questionnaire. In the case of continuous variables, we also suggest the checking of ranges. For instance, if the question is about the number of working hours, the variable should not have negative values.
 
 You can compare variable labels in the dataset to those in the questionnaire using the *--codebook-* Stata command or *--labelbook*-. Refer to [Example 8](/appendix/stata-validation) for further details.
 
-## 3.12. Assess variable relevance
+## 2.12. Assess Variable Relevance
 
 **Temporary, calculated or derived variables should not be disseminated**. Remove all unnecessary or temporary variables from the data files. These variables are not collected in the field and present no interest for users.
 
@@ -470,9 +485,9 @@ There are cases in which calculated variables may be useful to the users, so the
 
 To be useful, those variables that remain in the dataset must be well documented, else they, they may be useless to or misunderstood by users.
 
-## 3.13. Compress the variables to reduce the file size
+## 2.13. Compress the Variables to Reduce the File Size
 
-Compress the variables consist of reducing the size of the data file without loss of precision or modifying the information that it provides. Listed below are some reasons why compressing a data set may be a useful practice for at least three reasons: First, it makes faster the process of creating backups, uploading and downloading data files from your data repository or any Survey Catalog. Second, it reduces the time that data users will need to spend working with the data. Additionally, it will make the data more accessible to the different type of users; sometimes the data size will impose restrictions on those users who lack high computational power. Third, it will help to free up disk space in the server where you store your data
+Compress the variables consist of reducing the size of the data file without loss of precision or modifying the information that it provides. Listed below are some reasons why compressing a data set may be a useful practice for at least three reasons: First, it makes faster the process of creating backups, uploading and downloading data files from your data repository or any microdata catalog. Second, it reduces the time that data users will need to spend working with the data. Additionally, it will make the data more accessible to the different type of users; sometimes the data size will impose restrictions on those users who lack high computational power. Third, it will help to free up disk space in the server where you store your data
 
 ### Example: Compressing Variables to Reduce File Size
 
@@ -486,7 +501,7 @@ Compress the variables consist of reducing the size of the data file without los
 
 Use the *compress* command in Stata, or the *compress* option when you save a SPSS data file.
 
-## 3.14. Protect respondent privacy
+## 2.14. Protect respondent privacy
 
 Keep in mind that microdata are granular data with records describing individual units such as persons, households, businesses or institutions. Because these data contain detailed information about respondents, they may pose a risk of identification or divulging sensitive information if they are not properly protected. Steps need to be taken to ensure that the privacy of respondents is protected. This is important to maintain public trust, meet ethical and legal obligations, and enable data to be shared and used responsibly for research and policy analysis.
 
@@ -496,7 +511,7 @@ Before using or sharing a dataset, verify that all files have been reviewed to e
 
 If the dataset is intended for public release, it must first be transformed into an anonymous version suitable for dissemination. Removing direct identifiers is an essential first step in protecting respondent confidentiality and privacy. However, data anonymization should always begin with a careful review of the data to identify any variables that may pose a disclosure risk.
 
-### Resources to check for PII and apply Statistical Disclosure Control Measures
+### Resources to Check for PII and Apply Statistical Disclosure Control Measures
 
 - [How to search datasets for PII](https://poverty-action.org/sites/default/files/Guideline_How-to-Search-Datasets-for-PII.pdf)
 - [How to deidentify datasets](https://dimewiki.worldbank.org/De-identification)
@@ -507,43 +522,14 @@ If the dataset is intended for public release, it must first be transformed into
 
 ::: tip Suggestion
 If you are in the process of establishing a data archive and plan
-to document a collection of surveys, undertake a full inventory of
+to document a collection of microdata, undertake a full inventory of
 all existing data and metadata before you start the documentation.
 Use the IHSN Inventory Guidelines and Forms to facilitate this
 inventory (available at www.ihsn.org).
 :::
 
+The next section focuses on organizing and preparing external resources for long-term preservation and, where appropriate, dissemination. These resources include all materials produced throughout the data lifecycle, not just the datasets themselves.
 
-![image](/media/Page16.png)
-
-Statistical packages have some commands that allows us to make such conversions. *Table 14* shows examples of these commands/functions in STATA, R and SPSS.
-
-**Table 14. Convert string variables to numeric: STATA/R/SPSS Commands**
-
-**STATA**
-
-```stata
-use “individual.dta”
-destring (varname),generate
-```
-
-**R**
-
-```r
-individual <-
-load("individual.rda")
-replace}
-as.numeric(individual$varname)
-```
-
-**SPSS**
-
-```sps
-Load dataset and choose from the menu:
-- Data > Transform > Recode into Same individual$varname <-
-- Select the variable
-- Select “Old and New Values” and Recode it
-- Select “Convert numeric strings to numbers (‘5’->5)
-```
+Examples include technical documentation, such as questionnaires, code lists, manuals, and methodological reports that are essential for data users; administrative and operational reports that may inform the design and implementation of future data collection projects; and supporting materials, such as stakeholder feedback, workshop proceedings, and records of decisions made during questionnaire development. Preserving these resources alongside the data helps ensure transparency, reproducibility, and the long-term value of the microdata collection.
 
 [^1]: See section 3 -- *Importing data and establishing relationships* for more information on key variables.

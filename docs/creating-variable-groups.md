@@ -1,4 +1,4 @@
-# Creating variable groups
+# Creating Variable Groups
 
 Variable groups are optional, but will help organize the data for the user into specific subject of use categories. This will be particularly useful to the user in the case of data files that contain many variables and are not organized by topic (some flat files contain hundreds or even thousands of variables).
 
