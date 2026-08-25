@@ -74,12 +74,14 @@ export default defineConfig({
           { text: '6. Quality Assessment', link: '/quality-review-checklist' },
           { text: '7. Generating the Output for Publication', link: '/generating-output' },
           { text: '8. Cataloging Data, Metadata and Resources', link: '/pushing-to-nada' },
+          { text: 'Data Discoverability', link: '/discoverability' },
           { text: 'Conclusion', link: '/conclusion' },
         ],
       },
       {
         text: 'Appendix',
         items: [
+          { text: 'Administrative Data Documentation', link: '/appendix/admin_data' },
           { text: 'Data Validations in Stata', link: '/appendix/stata-validation' },
           { text: 'Quality Assessment and Feedback Form', link: '/media/microdata-documentation-quality-review-checklist-checkboxes.docx' },
         ],

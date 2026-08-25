@@ -43,7 +43,7 @@ Not all resources contained in the main project or archive folder should be incl
 
 Before dissemination, all files should be reviewed to ensure they comply with applicable confidentiality, privacy, licensing, legal, and organizational requirements. The dissemination package should contain only those resources necessary to support the appropriate use, interpretation, and reproducibility of the disseminated data.
 
-```text
+```
 📁 Dissemination
 │
 ├── 📁 UGA_2026_DHS_v01_M_v01_A_PUF
@@ -63,8 +63,6 @@ Before dissemination, all files should be reviewed to ensure they comply with ap
 │   ├── 📁 Documentation
 │   ├── 📁 Programs
 │   └── 📄 Release_Notes.txt
-
-
 ```
 
 ## Dissemination Version Naming Convention

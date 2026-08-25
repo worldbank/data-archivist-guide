@@ -7,11 +7,16 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "docs:migrate": "node scripts/migrate-rst.mjs"
+    "docs:migrate": "node scripts/migrate-rst.mjs",
+    "guide:combine": "node scripts/generate-pdf.mjs",
+    "guide:print": "node scripts/generate-print-html.mjs",
+    "guide:pdf": "node scripts/generate-pdf-puppeteer.mjs",
+    "build:all": "npm run docs:build && npm run guide:combine && npm run guide:print && npm run guide:pdf"
   },
   "devDependencies": {
     "markdown-it-footnote": "^4.0.0",
     "postcss": "^8.5.24",
+    "puppeteer": "^25.6.0",
     "vitepress": "^1.6.4"
   },
   "allowScripts": {

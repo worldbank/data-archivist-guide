@@ -47,7 +47,8 @@ The DDI requires completion of the following sections: Document Description, Stu
 | Field | DDI Element | Description | Example |
 |---|---|---|---|
 | Title | `titl` | Full authoritative title for the work.<br><br>**Guidance:** Do not include survey acronym in the title. Use title case and include reference years where appropriate. | Synthetic Data for an Imaginary Country, Sample, 2023 |
-| Identification No | `IDNo` | Unique string or number.<br><br>**Guidance:** Use a consistent ID scheme. | WLD_2023_SYNTH-SVY-EN_v01_M |
+| Identification No | `IDNo` | Unique string or number.<br><br>**Guidance:** Use a consistent ID scheme.| **WLD_2023_SYNTH-SVY-EN_v01_M** |
+|Other Identifiers|`identifiers`|This metadata element is provided to store information on the other identifiers of the study (for example a Digital Object Identifier, or the study identifier in another data catalog). The `identifiers` (key) and is composed of two sub-elements (`type` and `identifier`). This is a repeateble field  that allows capturing multiple identifiers.|
 | Sub-title | `subTitl` | Secondary title.<br><br>**Guidance:** Optional and rarely used. | A synthetic hierarchical dataset for simulation and training purposes |
 | Alternate Title / Acronym | `altTitl` | Commonly used title or acronym.<br><br>**Guidance:** Use official abbreviation. | **SYNTH-SVY-EN 2023** for the synthetic file or **DHS 2015** for a 2015 DHS survey |
 | Parallel / Translated Title | `parTitl` | Title translated into another language. | Données synthétiques pour un pays imaginaire, échantillon, 2023 |
