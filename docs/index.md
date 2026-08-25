@@ -4,18 +4,24 @@ layout: home
 hero:
   name: Quick Reference Guide for Microdata Archivists
   tagline: World Bank Group Chief Statistician's Office (DECDG)
-  text: Advancing Data Preservation, Discovery, and Reuse with AI-Ready Data and Metadata
+  text: Documenting Data for Long-Term Preservation, Discovery, and Reuse
   
   actions:
     - theme: brand
       text: Get Started
       link: /introduction
     - theme: alt
-      text: Metadata Editor Docs
-      link: https://worldbank.github.io/metadata-editor-docs/
+      text: View Guide (HTML)
+      link: /introduction
     - theme: alt
-      text: NADA Documentation
-      link: https://nada.ihsn.org/
+      text: Download Guide (PDF)
+      link: /Guide-for-Data-Archivists.pdf
+    - theme: alt
+      text: Download Guide (Markdown)
+      link: /guide-combined.md
+    - theme: alt
+      text: Metadata Editor
+      link: https://worldbank.github.io/metadata-editor-docs/
 
 features:
   - title: 9-Step Process
