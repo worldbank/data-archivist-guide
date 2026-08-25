@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+// @ts-ignore
 import footnote from 'markdown-it-footnote'
 
 export default defineConfig({
