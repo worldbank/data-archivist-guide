@@ -8,9 +8,6 @@ export default defineConfig({
   lang: 'en-US',
   cleanUrls: true,
   lastUpdated: true,
-  ignoreDeadLinks: [
-    '/media/microdata-documentation-quality-review-checklist-checkboxes.docx'
-  ],
 
   markdown: {
     config: (md) => {
@@ -84,7 +81,7 @@ export default defineConfig({
         items: [
           { text: 'Administrative Data Documentation', link: '/appendix/admin_data' },
           { text: 'Data Validations in Stata', link: '/appendix/stata-validation' },
-          { text: 'Quality Assessment and Feedback Form', link: '/media/microdata-documentation-quality-review-checklist-checkboxes.docx' },
+          { text: 'Downloads & Resources', link: '/appendix/downloads' },
         ],
       }      
     ],
