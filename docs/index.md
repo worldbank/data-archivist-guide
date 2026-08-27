@@ -9,26 +9,26 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /introduction
-    - theme: alt
-      text: View Guide (HTML)
-      link: /introduction
+      link: /introduction    
     - theme: alt
       text: Download Guide (PDF)
       link: /Guide-for-Data-Archivists.pdf
     - theme: alt
-      text: Download Guide (Markdown)
-      link: /guide-combined.md
-    - theme: alt
       text: Metadata Editor
       link: https://worldbank.github.io/metadata-editor-docs/
+    - theme: alt
+      text: NADA Cataloging Platform
+      link: https://nada.ihsn.org/
+   
 
 features:
-  - title: 9-Step Process
-    details: A chronological workflow from gathering data and documentation through quality assessment and publication.
-  - title: DDI-C & DCMI Standards
-    details: Document micro-datasets in compliance with international metadata specifications - Data Documentation Initiative (DDI-Codebook) and Dublin Core Metadata Initiative (DCMI).
+  - title: Microdata Curation Workflow
+    details: A recommended end-to-end workflow for organizing data, creating metadata, assessing quality, and publishing resources for discovery and reuse.
+  - title: Metadata Standards
+    details: Document microdata using internationally recognized metadata standards, including <strong>Data Documentation Initiative - DDI-Codebook</strong> and <strong>*Dublin Core Metadata Initiative (DCMI)</strong>.
   - title: Metadata Editor
-    details: A multi-standard open-source metadata editor for generating rich and structured metadata that complies with international metadata standards and schemas.
+    details: Create rich, structured, standards-compliant metadata using an open-source, multi-standard metadata editor.
+  - title: NADA Cataloging Platform
+    details: Publish, discover, and disseminate research data and metadata through a cataloging platform designed for statistical offices, international organizations, and research archives.
 ---
 

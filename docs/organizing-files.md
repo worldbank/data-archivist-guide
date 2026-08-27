@@ -82,6 +82,8 @@ When creating structured metadata for a dataset, use the dataset folder name as 
 
 For example, when documenting the main dataset, the Primary ID should be **UGA_2026_DHS_v01_M**. If you are documenting Version 2 of the Public Use File, the Primary ID should be **UGA_2026_DHS_v01_M_v02_A_PUF**.
 
+To accommodate diverse user needs and support long-term preservation and accessibility, data should be archived and disseminated in multiple widely used formats, such as Stata, SPSS, CSV, and ASCII.
+  
 Using a consistent naming convention helps maintain traceability, supports version control, and makes it easier to manage and identify related metadata and data assets over time.
 :::
 

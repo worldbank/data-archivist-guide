@@ -86,9 +86,14 @@ These checks help confirm that all expected records have been captured and that 
 
 Before you check for uniqueness of the identifiers in your files, you need to figure out the unit of analysis. Even if you are not the data producer, it is often easy to identify it. You can always review the documentation to see if the information has been provided. Below, some examples of units of analysis:
 
-**Table 5. Unit of Analysis by Study type**
+### Table 5. Unit of Analysis by Study Type
 
-![image](/media/Page6_2.png)
+| Study Type | Unit of Analysis |
+|------------|------------------|
+| Income/Expenditure/Household Surveys | • Households<br>• Individuals<br>• Consumption items |
+| Enterprise Surveys/Census | • Firms<br>• Establishments/Plants |
+| Agricultural Surveys/Census | • Households<br>• Crop area |
+| Research Data | • Schools<br>• Financial transactions<br>• Exported products<br>• Municipalities/precincts |
 
 Once you recognize the unit of analysis, the next step is to identify the column that uniquely identifies each record. If a dataset contains multiple related files, each record in every file must have a unique identifier. The data producer can also choose multiple variables to define a unique identifier. In that case, more than one column in a dataset is used to guarantee uniqueness. These identifiers are also called **key variables** or **ID variables**. The variable(s) should not contain missing values or have any duplicates. They are used by statistical packages such as SPSS, Stata, R or Python when data files need to be merged for analysis
 
