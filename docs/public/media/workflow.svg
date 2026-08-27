@@ -1,0 +1,64 @@
+<svg width="1000" height="180" viewBox="0 0 1000 180" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box {
+      fill: #f8fafc;
+      stroke: #3b82f6;
+      stroke-width: 2;
+      rx: 8;
+    }
+    .text {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      fill: #1e293b;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+    .arrow {
+      stroke: #64748b;
+      stroke-width: 2;
+      fill: none;
+    }
+  </style>
+
+  <!-- Step 1 -->
+  <rect class="box" x="20" y="60" width="140" height="50"/>
+  <text class="text" x="90" y="85">Data &amp; Docs</text>
+
+  <!-- Arrow -->
+  <line class="arrow" x1="160" y1="85" x2="200" y2="85"/>
+  <polygon points="200,85 192,80 192,90" fill="#64748b"/>
+
+  <!-- Step 2 -->
+  <rect class="box" x="200" y="60" width="140" height="50"/>
+  <text class="text" x="270" y="85">Organization</text>
+
+  <line class="arrow" x1="340" y1="85" x2="380" y2="85"/>
+  <polygon points="380,85 372,80 372,90" fill="#64748b"/>
+
+  <!-- Step 3 -->
+  <rect class="box" x="380" y="60" width="140" height="50"/>
+  <text class="text" x="450" y="85">Metadata</text>
+
+  <line class="arrow" x1="520" y1="85" x2="560" y2="85"/>
+  <polygon points="560,85 552,80 552,90" fill="#64748b"/>
+
+  <!-- Step 4 -->
+  <rect class="box" x="560" y="60" width="140" height="50"/>
+  <text class="text" x="630" y="85">Quality Review</text>
+
+  <line class="arrow" x1="700" y1="85" x2="740" y2="85"/>
+  <polygon points="740,85 732,80 732,90" fill="#64748b"/>
+
+  <!-- Step 5 -->
+  <rect class="box" x="740" y="60" width="140" height="50"/>
+  <text class="text" x="810" y="85">Publication</text>
+
+  <line class="arrow" x1="880" y1="85" x2="920" y2="85"/>
+  <polygon points="920,85 912,80 912,90" fill="#64748b"/>
+
+  <!-- Step 6 -->
+  <rect class="box" x="920" y="60" width="60" height="50"/>
+  <text class="text" x="950" y="85">Reuse</text>
+
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .p { fill:none; stroke:#2563eb; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+    </style>
+  </defs>
+
+  <rect class="p" x="6" y="22" width="12" height="12" rx="2"/>
+  <rect class="p" x="26" y="22" width="12" height="12" rx="2"/>
+  <rect class="p" x="46" y="22" width="12" height="12" rx="2"/>
+
+  <line class="p" x1="18" y1="28" x2="26" y2="28"/>
+  <line class="p" x1="38" y1="28" x2="46" y2="28"/>
+
+  <polyline class="p" points="14 34 14 46 50 46 50 34"/>
+
+  <circle cx="14" cy="46" r="3" fill="#2563eb"/>
+  <circle cx="50" cy="46" r="3" fill="#2563eb"/>
+</svg>

@@ -5,3 +5,105 @@
   font-size: 2rem;
   line-height: 1.2;
 }
+
+/* Fix icon container styling */
+.VPFeature .icon {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.VPFeature .icon img {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Stylize feature cards with shadows and hover effects */
+.VPFeature {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPFeature:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-2px) !important;
+}
+
+.VPFeature .box {
+  border-radius: 6px !important;
+}
+
+/* Custom grid styling for Open Source Tools cards */
+.VPFeatures.VPHomeFeatures > .VPFeature {
+  flex: 1 1 calc(25% - 0.375rem) !important;
+}
+
+.VPFeatures.VPHomeFeatures {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 1.5rem !important;
+  margin-top: 2rem !important;
+}
+
+/* Remove link styling from card text */
+.VPFeature {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.VPFeature h2,
+.VPFeature p {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.VPFeature:hover h2,
+.VPFeature:hover p {
+  color: inherit !important;
+}
+
+/* Reduce font size and add padding to card content */
+.VPFeature .box {
+  padding: 1.5rem !important;
+}
+
+.VPFeature h2 {
+  font-size: 1.1rem !important;
+  margin: 0.5rem 0 !important;
+}
+
+.VPFeature p {
+  font-size: 0.9rem !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.VPHomeFeatures + div.VPHomeFeatures .VPFeature {
+  display: flex !important;
+  flex-direction: column !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.VPHomeFeatures + div.VPHomeFeatures .VPFeature:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-2px) !important;
+}
+
+.VPHomeFeatures + div.VPHomeFeatures .box {
+  padding: 1.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+}
+
+.VPHomeFeatures + div.VPHomeFeatures .icon {
+  width: 60px !important;
+  height: 60px !important;
+}
