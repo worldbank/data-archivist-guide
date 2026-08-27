@@ -16,8 +16,8 @@ An online catalog provides several important benefits not limited to the followi
 
 Open-source cataloging platforms such as NADA (National Data Archive) can readily ingest metadata documented using the DDI Codebook (DDI-C) and Dublin Core (DCMI) standards. Once imported, the metadata can be published through a searchable web interface, alongside data files, documentation, questionnaires, reports, and other related resources.
 
-Detailed guidance on setting up and publishing metadata to a NADA catalog is available in the NADA Documentation:
-- [NADA Documentation](https://nada.ihsn.org/)
+Detailed guidance on adding metadata and data content to a NADA catalog is available in the NADA Documentation:- 
+- [NADA Documentation](https://ihsn.github.io/nada-documentation/admin-guide/content/microdata.html)
 
 Additional Resources
 - [International Household Survey Network (IHSN) Data Archiving Resources](https://ihsn.org/archiving)

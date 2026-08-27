@@ -12,24 +12,22 @@ This edition was revised and updated by Cathrine Machingauta and Mehmood Asghar.
   - Folder organization and file-naming conventions
   - Preparing data
   - Documenting the Study Description
-  - Document Description
-  - Data discoverability (New)
-  - Generating output
-  - Quality review, including an updated quality review checklist
-  - Administrative Metadata Documentation (New)
-  - Publishing to NADA
+  - External Resource Documentation
+  - Data Discoverability (new section)
+  - Generating Output
+  - Quality Review (including an updated quality review checklist)
+  - Administrative Metadata Documentation (new section)
+  - Publishing to NADA (new section)
 
 These updates reflect current tools, standards, and practices for data curation, documentation, preservation, and dissemination.
 
 
 [^1]: The Quick Reference Guide for Data Archivists. Publisher: The International Household Survey Network (IHSN). The World Bank, Development Data Group (DECDG) is a member of the IHSN Secretariat.
 
-The guide is a product of The World Bank Group Chief Statistician's Office - Development Data Group (DECDG).
+The guide is a product of The World Bank Group Chief Statistician's Office - Development Data Group (DECDG). License: **CC BY 4.0**
 
-License: **CC BY 4.0**
 
-::: info AI-Assisted Content Development
+> **Disclaimer**
+>
+> Portions of this document were generated with the assistance of artificial intelligence (AI). The content has been reviewed, edited, and validated by the authors; however, users should independently verify information and exercise professional judgment when applying it.
 
-Portions of this guide were developed with the assistance of generative artificial intelligence (AI) tools. AI was used to support drafting, editing, restructuring, and refining content. All content has been reviewed, validated, and adapted by the authors to ensure accuracy, relevance, and alignment with the objectives of this guide.
-
-:::
