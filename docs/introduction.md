@@ -8,7 +8,7 @@ In organizations that generate and process microdata, microdata archivists and d
 
 This *Quick Reference Guide for Microdata Archivists* provides data archivists with guidelines for documenting micro-datasets in compliance with The Data Documentation Initiative Codebook ([DDI Codebook/DDI-C](https://ddialliance.org/ddi-codebook)) and The Dublin Core Metadata Initiative ([DCMI](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)) metadata standards[^1]. 
 
-This Guide summarizes the process in 8 chronological steps:
+This Guide summarizes the process in the following chronological steps:
 
 1.  Organizing the folder structure
 2.  Gathering and preparing the data set
