@@ -95,7 +95,7 @@ Before you check for uniqueness of the identifiers in your files, you need to fi
 | Agricultural Surveys/Census | • Households<br>• Crop area |
 | Research Data | • Schools<br>• Financial transactions<br>• Exported products<br>• Municipalities/precincts |
 
-Once you recognize the unit of analysis, the next step is to identify the column that uniquely identifies each record. If a dataset contains multiple related files, each record in every file must have a unique identifier. The data producer can also choose multiple variables to define a unique identifier. In that case, more than one column in a dataset is used to guarantee uniqueness. These identifiers are also called **key variables** or **ID variables**. The variable(s) should not contain missing values or have any duplicates. They are used by statistical packages such as SPSS, Stata, R or Python when data files need to be merged for analysis
+Once you recognize the unit of analysis, the next step is to identify the column that uniquely identifies each record. If a dataset contains multiple related files, each record in every file must have a unique identifier. The data producer can also choose multiple variables to define a unique identifier. In that case, more than one column in a dataset is used to guarantee uniqueness. These identifiers are also called **key variables**[^1] or **ID variables**. The variable(s) should not contain missing values or have any duplicates. They are used by statistical packages such as SPSS, Stata, R or Python when data files need to be merged for analysis
 
 The absence of a unique identifier is a data quality issue, so one needs to ensure that the unique IDs remain fixed/present during the data cleaning process. If this correction is not possible, the archivist should note the anomalies in the documentation process.
 
@@ -470,9 +470,8 @@ Even when variables are labelled, the following good practices should be followe
 - Each variable should have a unique label. The same label should not be used for different variables, as this can create confusion and make analysis more difficult.
 - Labels should clearly distinguish between related variables and use consistent terminology throughout the dataset.
 - Variable labels should complement, not replace, detailed variable descriptions. While labels provide a short summary, the **variable description**[^2] should capture the full wording of the question, interviewer instructions, concepts being measured, derivation methods, or any other contextual information needed to interpret the data correctly.
-- Well-documented labels and descriptions improve data quality by making datasets easier to understand, review, validate, and reuse. They also support metadata extraction, search, and discovery, and help AI-assisted tools accurately interpret variables and generate reliable outputs.
+- Well-documented labels and descriptions improve data quality by making datasets easier to understand, review, validate, and reuse. They also support metadata extraction, search, and discovery, and help automated tools accurately interpret variables and generate reliable outputs.
 
-[^2]: See [Variable Description](/creating-structured-metadata#variable-description) section under Creating Structured Metadata.
 
 **Value Labels**
 
@@ -510,13 +509,13 @@ Use the *compress* command in Stata, or the *compress* option when you save a SP
 
 Keep in mind that microdata are granular data with records describing individual units such as persons, households, businesses or institutions. Because these data contain detailed information about respondents, they may pose a risk of identification or divulging sensitive information if they are not properly protected. Steps need to be taken to ensure that the privacy of respondents is protected. This is important to maintain public trust, meet ethical and legal obligations, and enable data to be shared and used responsibly for research and policy analysis.
 
-Therefore all datasets intended to be used with AI tools, prepared for analysis, or released for dissemination must not contain direct identifiers or personally identifiable information (PII).
+Therefore all datasets intended to be used with automated tools, prepared for analysis, or released for dissemination must not contain direct identifiers or personally identifiable information (PII).
 
-Before using or sharing a dataset, verify that all files have been reviewed to ensure that direct identifiers and other sensitive information that could directly or indirectly reveal the identity of respondents have been removed or treated. Examples include names, addresses, telephone numbers, email addresses, GPS coordinates, national identification numbers, and similar identifying information. Any variables containing direct identifiers should be excluded from datasets shared with others and from any datasets uploaded to online AI tools or external platforms.
+Before using or sharing a dataset, verify that all files have been reviewed to ensure that direct identifiers and other sensitive information that could directly or indirectly reveal the identity of respondents have been removed or treated. Examples include names, addresses, telephone numbers, email addresses, GPS coordinates, national identification numbers, and similar identifying information. Any variables containing direct identifiers should be excluded from datasets shared with others and from any datasets uploaded to online automated tools or external platforms.
 
 If the dataset is intended for public release, it must first be transformed into an anonymous version suitable for dissemination. Removing direct identifiers is an essential first step in protecting respondent confidentiality and privacy. However, data anonymization should always begin with a careful review of the data to identify any variables that may pose a disclosure risk.
 
-### Resources to Check for PII and Apply Statistical Disclosure Control Measures
+### Resources to Check for PII and Apply Statistical Disclosure Control[^3] Measures
 
 - [How to search datasets for PII](https://poverty-action.org/sites/default/files/Guideline_How-to-Search-Datasets-for-PII.pdf)
 - [How to deidentify datasets](https://dimewiki.worldbank.org/De-identification)
@@ -538,3 +537,5 @@ The next section focuses on organizing and preparing external resources for long
 Examples include technical documentation, such as questionnaires, code lists, manuals, and methodological reports that are essential for data users; administrative and operational reports that may inform the design and implementation of future data collection projects; and supporting materials, such as stakeholder feedback, workshop proceedings, and records of decisions made during questionnaire development. Preserving these resources alongside the data helps ensure transparency, reproducibility, and the long-term value of the microdata collection.
 
 [^1]: See section 3 -- *Importing data and establishing relationships* for more information on key variables.
+[^2]: See [Variable Description](/creating-structured-metadata#variable-description) section under Creating Structured Metadata.
+[^3]: Statistical Disclosure Control (SDC) is the application of statistical and data modification techniques to datasets and statistical outputs to prevent the identification of individuals or organizations and the disclosure of confidential information, while maintaining the usefulness of the data for analysis.

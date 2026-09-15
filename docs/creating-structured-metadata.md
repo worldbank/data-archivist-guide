@@ -1,17 +1,16 @@
 # 4. Completing the Metadata
 
-Once all data and documentation materials have been assembled, organized, and verified, they should be documented in accordance with the relevant metadata standards - DDI-C for the data, and DCMI for external resources. This ensures the creation of structured, machine-readable metadata documents that are saved in XML and JSON formats. Structured, machine-readable metadata facilitates preservation, discovery, and dissemination  of data and resources through online searchable catalogs. 
+Once all data and documentation materials have been assembled, organized, and verified, they should be documented in accordance with the relevant metadata standards: DDI Codebook (DDI-C) for datasets and Dublin Core Metadata Initiative (DCMI) standards for external resources. This process produces structured, machine-readable metadata that can be stored in XML (Extensible Markup Language) and JSON (JavaScript Object Notation) formats. Structured metadata supports the long-term preservation of data and documentation in repositories, enables metadata exchange and interoperability across catalogs, and enhances the discovery, access, and dissemination of data and related resources through searchable online platforms.
 
 A thorough completion of the DDI-C and DCMI elements will significantly raise the value of the archiving work by providing users with the necessary information to put the study into its proper context and to understand its purpose.
 
+
 ## Completing the Study Documentation
-The DDI-C metadata standard provides structured metadata for a dataset, capturing information on the identification, authorship, ownership, purpose, background methodologies, source information, provenance, quality control, access, physical file structures, variables/variable groupings, and related materials of a single dataset. Generating a DDI metadata codebook requires the completion of this information organized into five key sections: Document Description, Study Description, File Description, Variable Description, Variable Groups, and External Resources.
+The DDI-C metadata standard provides structured metadata for a dataset, capturing information on the identification, authorship, ownership, purpose, background methodologies, source information, provenance, quality control, access, physical file structures, variables/variable groupings, and related materials of a single dataset. Generating DDI-C compliant metadata requires the completion of this information organized into five key sections: Document Description, Study Description, File Description, Variable Description, Variable Groups, and External Resources.
 
 The Metadata Editor is a specialized tool designed to create structured, machine-readable metadata that complies with internationally recognized metadata standards. This section introduces the key metadata elements required for creating comprehensive, structured metadata for microdata. It explains why such metadata is important and links to the Metadata Editor User Guide for detailed, step-by-step instructions for completing each section in the Metadata Editor.
 
 ### 4.1. Good Practices for Completing the Document Description
-Documenting a study using the DDI-Codebook (DDI-C) and Dublin Core (DCMI) metadata standards involves creating a structured metadata record that is stored in an XML (Extensible Markup Language) file as well as JSON. This metadata file serves as the machine-readable representation of the study metadata and can be used by data catalogs, repositories, and other systems to discover, display, exchange, and preserve metadata.
-
 The Document Description section contains metadata about the XML or JSON metadata record itself rather than the study being documented. In other words, it describes the metadata document, its authorship, and its version history.
 
 As a best practice, the Document Description should capture information such as:
@@ -180,7 +179,7 @@ The DDI requires completion of the following sections: Document Description, Stu
 
 | Field | DDI Element | Description | Example |
 |---|---|---|---|
-| Other Forms of Data Appraisal | `dataAppr` |Document other issues pertaining to data appraisal. Describe other actions taken to assess reliability or quality, including post-enumeration surveys, comparisons with other sources, and data quality tables. | Data quality tables reviewed age distributions, missing values, sex ratios at birth, population pyramids, and anthropometry scatter plots. |
+| Other Forms of Data Appraisal | `dataAppr` |Document other issues pertaining to data appraisal. Describe other actions taken to assess reliability or quality, including post-enumeration surveys, comparisons with other sources, and data quality tables. Document both the procedures that were planned and any important deviations in implementation. Explain known limitations and their implications so users can judge whether the data are suitable for their intended analysis.| Data quality tables reviewed age distributions, missing values, sex ratios at birth, population pyramids, and anthropometry scatter plots. |
 | Response Rate | `respRate` | The percentage of sample members who provided information. <br><br>Report household or unit response rates based on the original sample. Provide rates by stratum when possible and ensure consistency with sample size and records in the data. | Household response rate: 96.3%; women response rate: 96.0%; children response rate: 97.7%. This is a synthetic dataset; the "response rate" is 100%. |
 | Estimate of Sampling Error | `EstSmpErr` | Measure of how precisely one can estimate a population value from a given sample. For sample surveys, describe sampling error calculations, indicators, software, methods, and reports or programs provided as external resources. | Sampling errors were calculated using the SPSS Complex Samples module and Taylor linearization method. |
 
@@ -257,9 +256,9 @@ For example, the Study Description may document the following elements that woul
 
 Without adequate documentation, users may incorrectly interpret findings, make invalid comparisons, or draw conclusions that are inconsistent with the data's scope, context, and methodological limitations.
 
-**Supports AI-Powered Discovery and Analysis**
+**Supports Automated Discovery and Analysis**
 
-As data catalogs increasingly incorporate AI-powered search and analytical tools, detailed study-level metadata becomes even more important. AI systems rely on information in the Study Description to understand the subject matter, population, methodology, and coverage of a dataset. This enables them to make relevant and meaningful recommendations, improve search results and dataset discovery.
+As data catalogs increasingly incorporate automated search and analytical tools, detailed study-level metadata becomes even more important. Automated systems rely on information in the Study Description to understand the subject matter, population, methodology, and coverage of a dataset. This enables them to make relevant and meaningful recommendations, improve search results and dataset discovery.
 
 **Example**
 
@@ -301,7 +300,7 @@ Well-documented file descriptions:
 - **Support reproducibility** by recording details that may not be apparent from the data alone.
 - Facilitate **long-term preservation and reuse** of the dataset.
 - Improve **discoverability and usability** in data catalogs and repositories.
-- **Enable AI-powered search and analysis tools** to better understand the structure and characteristics of the data.
+- **Enable automated search and analysis tools** to better understand the structure and characteristics of the data.
 
 The File Description section is also an important component of data quality documentation. Information about missing data, validation rules, consistency checks, editing procedures, and quality assessments **helps users evaluate the reliability and limitations** of the dataset.
 
@@ -343,7 +342,7 @@ The DDI-Codebook Variable Description section captures detailed metadata about e
 Comprehensive variable documentation is essential because 
 - It **provides the context required to accurately interpret, analyze, and reuse data**. Variable descriptions preserve the meaning, origin, and construction of each variable, ensuring that datasets remain understandable long after data collection has been completed. 
 - They also **improve discoverability in data catalogs and support reproducible research** by documenting how variables were collected, coded, and, where applicable, derived. 
-- Moreover, **modern AI-powered catalogs, search engines, and data assistants rely heavily on metadata** to find relevant datasets and variables. Without this information, AI may apply inappropriate analytical methods or draw incorrect conclusions.
+- Moreover, **modern automated catalogs, search engines, and data assistants rely heavily on metadata** to find relevant datasets and variables. Without this information, automated techniques may apply inappropriate analytical methods or draw incorrect conclusions.
 
 Beyond supporting interpretation and reuse, **documenting variables contributes to data quality**. The process of reviewing and describing variables often helps identify inconsistencies, coding errors, undocumented transformations, unclear labels, and discrepancies between the questionnaire and the dataset. As a result, variable documentation serves as an important quality assurance step, improving the accuracy, reliability, and usability of the data.
 
@@ -378,7 +377,7 @@ Well-designed variable groups can:
 - Help users quickly identify variables relevant to their research
 - Support thematic browsing and searching in data catalogs
 - Provide additional context about the organization of the questionnaire or study
-- Enhance machine-readable metadata for AI-powered search and discovery tools
+- Enhance machine-readable metadata for automated search and discovery tools
 
 **Example**
 
@@ -403,7 +402,7 @@ Together, the Document Description, Study Description, File Description, Variabl
 
 These metadata elements improve data quality by encouraging a systematic review of the data and its documentation, while also supporting long-term preservation, discoverability, and reuse. Rich metadata ensures that datasets remain understandable and usable long after the original project team is no longer available, preserving valuable institutional knowledge and context.
 
-Comprehensive metadata also enables data catalogs, repositories, and AI-powered tools to more effectively locate, interpret, connect, and analyze data resources. The Metadata Editor streamlines this process by providing an efficient way to create standards-compliant, machine-readable metadata that can be shared, published, exchanged, and preserved over time.
+Comprehensive metadata also enables data catalogs, repositories, and automated tools to more effectively locate, interpret, connect, and analyze data resources. The Metadata Editor streamlines this process by providing an efficient way to create standards-compliant, machine-readable metadata that can be shared, published, exchanged, and preserved over time.
 
 ::: tip Documenting microdata in the Metadata Editor
 To generate structured metadata for datasets using the Metadata Editor, you will need to:

@@ -29,5 +29,5 @@ The guide is a product of The World Bank Group Chief Statistician's Office - Dev
 
 > **Disclaimer**
 >
-> Portions of this document were generated with the assistance of artificial intelligence (AI). The content has been reviewed, edited, and validated by the authors; however, users should independently verify information and exercise professional judgment when applying it.
+> Portions of this document were generated with automated content generation tools. The content has been reviewed, edited, and validated by the authors; however, users should independently verify information and exercise professional judgment when applying it.
 

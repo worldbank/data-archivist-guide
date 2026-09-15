@@ -2,18 +2,18 @@
 title: Microdata Documentation Quality Review Checklist
 description: A practical checklist for reviewing the completeness, consistency, quality, and usability of microdata metadata and supporting documentation.
 ---
-# 6. Quality Assessment
+# 6. Metadata Quality Assessment
 
-An **independent review** of the data and metadata is highly recommended prior to publishing the final output. There are two recommended methods to conduct a quality assessment.
+An **independent review** of the metadata is highly recommended prior to publishing the final output. There are two recommended methods to conduct a quality assessment. The review should consider relevant dimensions such as accuracy, reliability, coherence, comparability, timeliness, accessibility, usability, interpretability, and discoverability.
 
 ### I. Metadata Editor Assessment Tool
 
-The Metadata Editor is equipped with a built-in AI assisted metadata assessment tool to assess and improve project metadata when review is initiated. More information on the metadata review can be found in the documentation - see [Metadata reviewer.](https://worldbank.github.io/metadata-editor-docs/assess_metadata.html)
+The Metadata Editor is equipped with a built-in automated metadata assessment tool to assess and improve project metadata when review is initiated. More information on the metadata review can be found in the documentation - see [Metadata reviewer.](https://worldbank.github.io/metadata-editor-docs/assess_metadata.html)
 
 
 ### II. Microdata Documentation Quality Review Checklist and Feedback Form
 
-This checklist is designed to support the review of microdata documentation before publication, dissemination, or long-term preservation. It can be used to assess whether metadata prepared using the DDI-Codebook (DDI-C) and Dublin Core Metadata Initiative (DCMI) standards is complete, consistent, clear, and usable by data users, data catalogs, repositories, and AI-enabled discovery tools.
+This checklist is designed to support the review of microdata documentation before publication, dissemination, or long-term preservation. It can be used to assess whether metadata prepared using the DDI-Codebook (DDI-C) and Dublin Core Metadata Initiative (DCMI) standards is complete, consistent, clear, and usable by data users, data catalogs, repositories, and automated discovery tools.
 
 The checklist is organized around the main metadata sections commonly used to document microdata: **Document Description**, **Study Description**, **Data Files**, **Variables**, **Variable Groups**, and **External Resources**. A final section is included for reviewing the dataset landing page or repository record before publication. A downloadable, editable version is available <a href="/media/microdata-documentation-quality-review-checklist-checkboxes.docx" download="quality-review-checklist.docx">here</a>. 
 
@@ -325,7 +325,7 @@ This section replaces legacy media-focused checks and supports review of the onl
 | Searchability | Dataset can be discovered using title, country, year, topics, keywords, and other relevant metadata. | ☐ Yes ☐ No ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
 | Persistent links | Stable URLs, persistent identifiers, or catalog links are provided where applicable. | ☐ Yes ☐ No ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
 | Accessibility | Documents and catalog pages are readable, accessible, and usable by intended audiences. | ☐ Yes ☐ No ☐ Not applicable |  | ☐ None ☐ Fix ☐ Check |
-| AI readiness | Metadata is sufficiently descriptive and structured to support machine indexing, search, and AI-enabled discovery. | ☐ Yes ☐ No ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
+| Automated process readiness | Metadata is sufficiently descriptive and structured to support machine indexing, search, and automated discovery. | ☐ Yes ☐ No ☐ Not applicable |  | ☐ None ☐ Add ☐ Fix ☐ Check |
 
 ---
 

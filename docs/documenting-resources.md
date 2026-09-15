@@ -3,7 +3,9 @@
 
 The External Resources section is used to document and describe materials that are related to a dataset, study, project, or data collection but exist outside the primary data files. These resources may include questionnaires, data collection instruments, interviewer or field manuals, reports, publications, methodological documents, technical papers, tabulations, maps, training materials, codebooks, data processing guidelines, and other supporting documentation that provides additional context for understanding and using the data.
 
-External resources are typically documented using the Dublin Core Metadata Initiative (DCMI) standard, which provides a simple and widely adopted framework for describing digital resources. Key metadata elements include:
+External resources are typically documented using the Dublin Core Metadata Initiative (DCMI) standard, which provides a simple and widely adopted framework for describing digital resources. DCMI is a compact metadata standard used here to describe related resources such as questionnaires, manuals, reports, scripts, photographs, and maps.
+
+Key metadata elements include:
 
 - Resource title
 - Creator
@@ -59,13 +61,14 @@ External resources are typically documented using the Dublin Core Metadata Initi
 | Field | DDI Element | Description | Example |
 |---|---|---|---|
 | Subjects | `subjects` | Resource subjects. | Sampling; Questionnaire design; Fieldwork; Data processing |
-### Why Is This Important?
+### Why is This Important?
 
 - Documenting external resources helps **preserve valuable contextual information that may not be captured within the data files themselves**.
 - It enables users to **locate**, **access**, and **understand** supporting materials that provide important information about the data, its production, methodology, processing, quality, and intended use.
+- Well-documented access and rights information provides users with a clear understanding of who can access the resource, under what conditions, and any restrictions governing its use, redistribution, or reuse.
 - Comprehensive documentation of external resources improves the **discoverability** of data and related materials in catalogs and repositories.
 - It supports **long-term preservation** by ensuring that critical documentation and supporting resources remain linked to the data over time.
-- Well-documented external resources also enable **AI-powered tools, search systems, and metadata platforms to connect datasets with the documentation required for accurate interpretation, analysis, reproducibility, and reuse**.
+- Well-documented external resources also enable **automated tools, search systems, and metadata platforms to connect datasets with the documentation required for accurate interpretation, analysis, reproducibility, and reuse**.
 
 ## Importing External Resources
 

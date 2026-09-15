@@ -12,7 +12,7 @@ Machine-readable metadata transforms descriptive information about a dataset int
 Discoverability is only the first step. Rich metadata also helps users determine whether a dataset is appropriate for their intended use. Information about methodology, coverage, variables, quality, provenance, update frequency, and access conditions enables researchers, analysts, policymakers, and other users to assess the relevance and reliability of a resource before investing time in obtaining and analyzing the data.
 Because machine-readable metadata follows standardized formats, it can also be exchanged between systems without manual re-entry. This interoperability allows metadata to travel with the dataset across platforms and supports integration into data catalogs, research infrastructures, knowledge graphs, and digital preservation systems.
 ### Discoverability by automated systems
-Machine-readable metadata has become increasingly important for artificial intelligence applications. Modern search technologies and systems rely on structured metadata to identify, interpret, and retrieve relevant resources. Well-described datasets are more likely to be surfaced by semantic search engines, recommendation systems, and automated discovery tools because these systems can understand relationships between concepts, topics, locations, organizations, and time periods.
+Machine-readable metadata has become increasingly important for modern search and discovery applications. Automated systems and technologies rely on structured metadata to identify, interpret, and retrieve relevant resources. Well-described datasets are more likely to be surfaced by semantic search engines, recommendation systems, and automated discovery tools because these systems can understand relationships between concepts, topics, locations, organizations, and time periods.
 As research and data ecosystems become more interconnected, structured metadata provides the context needed to support the discovery, evaluation, preservation, and reuse of data resources.
 
 ## Benefits of Machine-Readable Metadata for Discoverability
@@ -24,10 +24,10 @@ As research and data ecosystems become more interconnected, structured metadata 
 - Increases the likelihood that datasets will be found, accessed, and reused.
 - Improves machine-readability for semantic search and automated discovery systems.
 - Supports the long-term preservation and accessibility of data assets.
-In short: Machine-readable metadata acts as the bridge between data and discovery. Following metadata standards to transform descriptive information into a structured, standardized format enables datasets to be found, understood, connected, and reused by people, applications, search engines, and AI systems alike.
+In short: Machine-readable metadata acts as the bridge between data and discovery. Following metadata standards to transform descriptive information into a structured, standardized format enables datasets to be found, understood, connected, and reused by people, applications, search engines, and automated systems alike.
 
 ## Examples of Metadata Schemas that Enhance Discoverability
-Different metadata standards serve different communities and use cases, but they all share a common goal: making data easier to find, understand, and reuse across systems. Once metadata is expressed in one or more machine-readable schemas, it can be harvested by search engines, data catalogs, research infrastructures, applications, and AI systems. 
+Different metadata standards serve different communities and use cases, but they all share a common goal: making data easier to find, understand, and reuse across systems. Once metadata is expressed in one or more machine-readable schemas, it can be harvested by search engines, data catalogs, research infrastructures, applications, and automated systems. 
 
 ________________________________________
 ### DDI Codebook
@@ -60,7 +60,7 @@ This way, a user searching for:
 ________________________________________
 
 ### Croissant
-Croissant is a machine-readable metadata standard developed through the MLCommons community to make datasets more discoverable, interoperable, and reusable for machine learning and AI applications. It extends Schema.org and adds information about dataset structure, files, resources, record organization, and machine learning semantics. One of its primary goals is to make datasets easier for both humans and AI systems to discover and use. 
+Croissant is a machine-readable metadata standard developed through the MLCommons community to make datasets more discoverable, interoperable, and reusable for machine learning and automated systems and applications. It extends Schema.org and adds information about dataset structure, files, resources, record organization, and machine learning semantics. One of its primary goals is to make datasets easier for both humans and automated systems to discover and use. 
 
 Unlike traditional discoverability standards that focus primarily on dataset description, Croissant also helps automated systems understand how datasets are organized and how they should be used. It can describe:
 - Dataset files and resources

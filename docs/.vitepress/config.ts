@@ -69,7 +69,7 @@ export default defineConfig({
             ],
           },
           { text: '5. Documenting External Resources', link: '/documenting-resources' },
-          { text: '6. Quality Assessment', link: '/quality-review-checklist' },
+          { text: '6. Metadata Quality Assessment', link: '/quality-review-checklist' },
           { text: '7. Generating the Output for Publication', link: '/generating-output' },
           { text: '8. Cataloging Data, Metadata and Resources', link: '/pushing-to-nada' },
           { text: 'Data Discoverability', link: '/discoverability' },

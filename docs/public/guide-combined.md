@@ -18,27 +18,25 @@ This edition was revised and updated by Cathrine Machingauta and Mehmood Asghar.
   - Folder organization and file-naming conventions
   - Preparing data
   - Documenting the Study Description
-  - Document Description
-  - Data discoverability (New)
-  - Generating output
-  - Quality review, including an updated quality review checklist
-  - Administrative Metadata Documentation (New)
-  - Publishing to NADA
+  - External Resource Documentation
+  - Data Discoverability (new section)
+  - Generating Output
+  - Quality Review (including an updated quality review checklist)
+  - Administrative Metadata Documentation (new section)
+  - Publishing to NADA (new section)
 
 These updates reflect current tools, standards, and practices for data curation, documentation, preservation, and dissemination.
 
 
 [^1]: The Quick Reference Guide for Data Archivists. Publisher: The International Household Survey Network (IHSN). The World Bank, Development Data Group (DECDG) is a member of the IHSN Secretariat.
 
-The guide is a product of The World Bank Group Chief Statistician's Office - Development Data Group (DECDG).
+The guide is a product of The World Bank Group Chief Statistician's Office - Development Data Group (DECDG). License: **CC BY 4.0**
 
-License: **CC BY 4.0**
 
-::: info AI-Assisted Content Development
+> **Disclaimer**
+>
+> Portions of this document were generated with automated content generation tools. The content has been reviewed, edited, and validated by the authors; however, users should independently verify information and exercise professional judgment when applying it.
 
-Portions of this guide were developed with the assistance of generative artificial intelligence (AI) tools. AI was used to support drafting, editing, restructuring, and refining content. All content has been reviewed, validated, and adapted by the authors to ensure accuracy, relevance, and alignment with the objectives of this guide.
-
-:::
 
 
 ---
@@ -47,24 +45,26 @@ Portions of this guide were developed with the assistance of generative artifici
 
 Microdata are detailed, unit-level data collected from surveys, censuses, and administrative systems. Each record represents a specific unit of observation, such as a person, household, business, or institution, and contains information about its characteristics, activities, or conditions. Because collecting, processing, and maintaining microdata requires a significant investment of time, expertise, and resources, these data are valuable institutional assets.
 
-To ensure that microdata can be understood, discovered, accessed, and reused over time, they must be accompanied by comprehensive metadata. Metadata provide the context needed to find/identify a dataset, interpret the dataset, describe what the data measure, how they were collected, processed, and organized, who produced them, and under what conditions they can be accessed and used. The **Data Documentation Initiative Codebook (DDI-C)** and the **Dublin Core Metadata Initiative (DCMI)** are internationally recognized ISO standards - useful for providing a structured framework for documenting microdata and related resources in a consistent, machine-readable, and interoperable manner.
+To ensure that microdata can be understood, discovered, accessed, and reused over time, they must be accompanied by comprehensive metadata. Metadata provide the context needed to find/identify a dataset, interpret the dataset, describe what the data measure, how they were collected, processed, and organized, who produced them, and under what conditions they can be accessed and used. The **Data Documentation Initiative Codebook (DDI-C)** and the **Dublin Core Metadata Initiative (DCMI)** are internationally recognized ISO standards - useful for providing a structured framework for documenting microdata and related resources in a consistent, machine-readable[^1], and interoperable[^2] manner.
 
 In organizations that generate and process microdata, microdata archivists and data stewards play a critical role in applying these standards to preserve, document, organize, manage, and disseminate microdata while protecting respondent privacy and confidentiality. Through effective stewardship and standardized metadata, microdata remain understandable, discoverable, secure, accessible, and reusable, maximizing their value for research, policy development, and evidence-based decision-making.
 
-This *Quick Reference Guide for Microdata Archivists* provides data archivists with guidelines for documenting micro-datasets in compliance with The Data Documentation Initiative Codebook ([DDI Codebook/DDI-C](https://ddialliance.org/ddi-codebook)) and The Dublin Core Metadata Initiative ([DCMI](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)) metadata standards[^1]. 
+This *Quick Reference Guide for Microdata Archivists* provides data archivists with guidelines for documenting micro-datasets in compliance with The Data Documentation Initiative Codebook ([DDI Codebook/DDI-C](https://ddialliance.org/ddi-codebook)) and The Dublin Core Metadata Initiative ([DCMI](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)) metadata standards[^3]. 
 
-This Guide summarizes the process in 8 chronological steps:
+This Guide summarizes the process in the following chronological steps:
 
 1.  Organizing the folder structure
 2.  Gathering and preparing the data set
 3.  Gathering and preparing the documentation
 4.  Documenting the study, data file(s) and variables
 5.  Documenting external resources
-6.  Quality assessment
+6.  Metadata Quality assessment
 7.  Generating the output for publication
 8.  Cataloging data, metadata and resources
 
-This guide introduces the key concepts and practices for preparing data and organizing resources for cataloging and dissemination. It covers the creation of structured, machine-readable metadata, as well as the cataloging of microdata and related resources. Where relevant, the guide provides references to World Bank-supported open-source tools, including **sdcMicro** for data anonymization, the **Metadata Editor** for documenting datasets and resources and generating machine-readable metadata, and **NADA** for cataloging and disseminating data collections.
+Microdata archiving is part of the wider Data Management Lifecycle. It supports verification and processing; protection, documentation and packaging; storage and preservation; dissemination; and later evaluation and use.
+
+This guide introduces the key concepts and practices for microdata archiving, including preparing data and organizing resources for cataloging and dissemination. It covers the creation of structured, machine-readable metadata, as well as the cataloging of microdata and related resources. Where relevant, the guide provides references to World Bank-supported open-source tools, including **sdcMicro** for data anonymization, the **Metadata Editor** for documenting datasets and resources and generating machine-readable metadata, and **NADA** for cataloging and disseminating data collections.
 
 This guide is not intended to serve as a user manual for these tools. Comprehensive instructions for their installation, configuration, and use are available in their respective documentation. Additional information about these tools can be found here:
 - [sdcMicro - Statistical Disclosure Control](https://sdctools.github.io/sdcMicro/)
@@ -73,7 +73,9 @@ This guide is not intended to serve as a user manual for these tools. Comprehens
 
 To get started, the next section outlines the key principles and best practices for organizing datasets and related resources within a repository. Establishing a well-structured repository is an essential first step that facilitates efficient data curation, metadata creation, cataloging, and dissemination.
 
-[^1]: DDI-Codebook (DDI-C) and DCMI (Dublin Core Metadata Initiative) are international XML metadata specifications. For more information on these standards, please visit https://ddialliance.org/ddi-codebook and https://www.dublincore.org/specifications/dublin-core/dcmi-terms/.
+[^1]: Machine-readable metadata is structured metadata that software can process automatically.
+[^2]: Interoperability refers to the ability of different systems, tools, and platforms to exchange, interpret, and use data and metadata consistently, enabling seamless integration and collaboration across various data management and analysis environments.
+[^3]: DDI-Codebook (DDI-C) and DCMI (Dublin Core Metadata Initiative) are international XML metadata specifications. For more information on these standards, please visit https://ddialliance.org/ddi-codebook and https://www.dublincore.org/specifications/dublin-core/dcmi-terms/.
 
 
 ---
@@ -162,6 +164,8 @@ When creating structured metadata for a dataset, use the dataset folder name as 
 
 For example, when documenting the main dataset, the Primary ID should be **UGA_2026_DHS_v01_M**. If you are documenting Version 2 of the Public Use File, the Primary ID should be **UGA_2026_DHS_v01_M_v02_A_PUF**.
 
+To accommodate diverse user needs and support long-term preservation and accessibility, data should be archived and disseminated in multiple widely used formats, such as Stata, SPSS, CSV, and ASCII.
+  
 Using a consistent naming convention helps maintain traceability, supports version control, and makes it easier to manage and identify related metadata and data assets over time.
 :::
 
@@ -257,11 +261,16 @@ These checks help confirm that all expected records have been captured and that 
 
 Before you check for uniqueness of the identifiers in your files, you need to figure out the unit of analysis. Even if you are not the data producer, it is often easy to identify it. You can always review the documentation to see if the information has been provided. Below, some examples of units of analysis:
 
-**Table 5. Unit of Analysis by Study type**
+### Table 5. Unit of Analysis by Study Type
 
-![image](/media/Page6_2.png)
+| Study Type | Unit of Analysis |
+|------------|------------------|
+| Income/Expenditure/Household Surveys | • Households<br>• Individuals<br>• Consumption items |
+| Enterprise Surveys/Census | • Firms<br>• Establishments/Plants |
+| Agricultural Surveys/Census | • Households<br>• Crop area |
+| Research Data | • Schools<br>• Financial transactions<br>• Exported products<br>• Municipalities/precincts |
 
-Once you recognize the unit of analysis, the next step is to identify the column that uniquely identifies each record. If a dataset contains multiple related files, each record in every file must have a unique identifier. The data producer can also choose multiple variables to define a unique identifier. In that case, more than one column in a dataset is used to guarantee uniqueness. These identifiers are also called **key variables** or **ID variables**. The variable(s) should not contain missing values or have any duplicates. They are used by statistical packages such as SPSS, Stata, R or Python when data files need to be merged for analysis
+Once you recognize the unit of analysis, the next step is to identify the column that uniquely identifies each record. If a dataset contains multiple related files, each record in every file must have a unique identifier. The data producer can also choose multiple variables to define a unique identifier. In that case, more than one column in a dataset is used to guarantee uniqueness. These identifiers are also called **key variables**[^1] or **ID variables**. The variable(s) should not contain missing values or have any duplicates. They are used by statistical packages such as SPSS, Stata, R or Python when data files need to be merged for analysis
 
 The absence of a unique identifier is a data quality issue, so one needs to ensure that the unique IDs remain fixed/present during the data cleaning process. If this correction is not possible, the archivist should note the anomalies in the documentation process.
 
@@ -636,9 +645,8 @@ Even when variables are labelled, the following good practices should be followe
 - Each variable should have a unique label. The same label should not be used for different variables, as this can create confusion and make analysis more difficult.
 - Labels should clearly distinguish between related variables and use consistent terminology throughout the dataset.
 - Variable labels should complement, not replace, detailed variable descriptions. While labels provide a short summary, the **variable description**[^2] should capture the full wording of the question, interviewer instructions, concepts being measured, derivation methods, or any other contextual information needed to interpret the data correctly.
-- Well-documented labels and descriptions improve data quality by making datasets easier to understand, review, validate, and reuse. They also support metadata extraction, search, and discovery, and help AI-assisted tools accurately interpret variables and generate reliable outputs.
+- Well-documented labels and descriptions improve data quality by making datasets easier to understand, review, validate, and reuse. They also support metadata extraction, search, and discovery, and help automated tools accurately interpret variables and generate reliable outputs.
 
-[^2]: See [Variable Description](/creating-structured-metadata#variable-description) section under Creating Structured Metadata.
 
 **Value Labels**
 
@@ -676,13 +684,13 @@ Use the *compress* command in Stata, or the *compress* option when you save a SP
 
 Keep in mind that microdata are granular data with records describing individual units such as persons, households, businesses or institutions. Because these data contain detailed information about respondents, they may pose a risk of identification or divulging sensitive information if they are not properly protected. Steps need to be taken to ensure that the privacy of respondents is protected. This is important to maintain public trust, meet ethical and legal obligations, and enable data to be shared and used responsibly for research and policy analysis.
 
-Therefore all datasets intended to be used with AI tools, prepared for analysis, or released for dissemination must not contain direct identifiers or personally identifiable information (PII).
+Therefore all datasets intended to be used with automated tools, prepared for analysis, or released for dissemination must not contain direct identifiers or personally identifiable information (PII).
 
-Before using or sharing a dataset, verify that all files have been reviewed to ensure that direct identifiers and other sensitive information that could directly or indirectly reveal the identity of respondents have been removed or treated. Examples include names, addresses, telephone numbers, email addresses, GPS coordinates, national identification numbers, and similar identifying information. Any variables containing direct identifiers should be excluded from datasets shared with others and from any datasets uploaded to online AI tools or external platforms.
+Before using or sharing a dataset, verify that all files have been reviewed to ensure that direct identifiers and other sensitive information that could directly or indirectly reveal the identity of respondents have been removed or treated. Examples include names, addresses, telephone numbers, email addresses, GPS coordinates, national identification numbers, and similar identifying information. Any variables containing direct identifiers should be excluded from datasets shared with others and from any datasets uploaded to online automated tools or external platforms.
 
 If the dataset is intended for public release, it must first be transformed into an anonymous version suitable for dissemination. Removing direct identifiers is an essential first step in protecting respondent confidentiality and privacy. However, data anonymization should always begin with a careful review of the data to identify any variables that may pose a disclosure risk.
 
-### Resources to Check for PII and Apply Statistical Disclosure Control Measures
+### Resources to Check for PII and Apply Statistical Disclosure Control[^3] Measures
 
 - [How to search datasets for PII](https://poverty-action.org/sites/default/files/Guideline_How-to-Search-Datasets-for-PII.pdf)
 - [How to deidentify datasets](https://dimewiki.worldbank.org/De-identification)
@@ -704,10 +712,15 @@ The next section focuses on organizing and preparing external resources for long
 Examples include technical documentation, such as questionnaires, code lists, manuals, and methodological reports that are essential for data users; administrative and operational reports that may inform the design and implementation of future data collection projects; and supporting materials, such as stakeholder feedback, workshop proceedings, and records of decisions made during questionnaire development. Preserving these resources alongside the data helps ensure transparency, reproducibility, and the long-term value of the microdata collection.
 
 [^1]: See section 3 -- *Importing data and establishing relationships* for more information on key variables.
+[^2]: See [Variable Description](/creating-structured-metadata#variable-description) section under Creating Structured Metadata.
+[^3]: Statistical Disclosure Control (SDC) is the application of statistical and data modification techniques to datasets and statistical outputs to prevent the identification of individuals or organizations and the disclosure of confidential information, while maintaining the usefulness of the data for analysis.
 
 ---
 
 # 3. Gathering and Preparing the Documentation
+
+
+Documentation should make the data and the processes used to produce them verifiable. This includes recording methods, decisions, transformations, and known quality issues clearly enough for others to review.
 
 All information related to the study throughout the data production lifecycle may be useful and should be archived (even if not all will be disseminated to the public). This includes not only technical documents such as the questionnaires or list of codes (obviously needed by data users), but also administrative reports (potentially useful for implementation of future microdata collection projects), and other documents such as a compilation of the comments provided by stakeholders at the time the questionnaire was designed, etc. All archived materials should follow a standardized folder structure and file naming convention to facilitate discovery, preservation, and future reuse. Resources to be included if available include:
 
@@ -722,7 +735,7 @@ All information related to the study throughout the data production lifecycle ma
 
 **Methodology and Data Production Documentation**
 - Data collection or data acquisition methodology
-- Data source descriptions and data lineage documentation
+- Data source descriptions and data lineage documentation (i.e. records of where data came from and the main steps through which they were collected, combined, transformed, or revised.)
 - Sampling design documentation (where applicable)
 - Weighting methodologies and calculation procedures (where applicable)
 - Data integration, linkage, or matching procedures
@@ -731,6 +744,8 @@ All information related to the study throughout the data production lifecycle ma
 - Fieldwork, operational, or system implementation reports
 - Pilot, pre-test, or system testing reports
 - Project timelines and production schedules
+- Version history and change logs for data and metadata
+- Records linking significant edits or transformations to the responsible script, decision, or approval.
 
 **Geospatial Resources**
 - GIS shapefiles and boundary files
@@ -789,7 +804,11 @@ All information related to the study throughout the data production lifecycle ma
 Documents available in electronic format (MS-Word, Excel, and others) must be preserved in their original format and in PDF format.
 
 All documents available only on hard copy/paper must be scanned. Use low resolution graphics, and black & white option (unless it is crucial to preserve colours e.g. where color conveys meaning or interpretation) to avoid large file sizes. A minimum scanning resolution of 300 dpi is recommended. Save the scanned documents in searchable PDF format where possible.
-Maintain checksums or other file integrity verification mechanisms for digital preservation and periodically verify that files remain accessible and uncorrupted. Scan all resources with an updated virus detection application.
+Maintain checksums or other file integrity verification mechanisms for digital preservation and periodically verify that files remain accessible and uncorrupted. Scan all resources with an updated virus detection application. Document the procedures used to maintain file integrity and accessibility over time.
+
+For preservation copies, prefer formats with open, published specifications, wide adoption, good metadata support, and a reasonable history of backward compatibility. Retain the original file as well. Maintain more than one copy of critical materials, keep at least one copy separate from the main storage location, and periodically test that files and restoration procedures still work.
+
+
 :::
 
 Organizing data and resources is a critical part of the documentation and archiving process. However, simply organizing files and documentation does not make them interoperable, machine-readable, or ready for ingestion into a data catalog. To ensure consistency, discoverability, and long-term usability, these resources must also be described using structured metadata that complies with established standards.
@@ -800,18 +819,17 @@ The next section introduces the metadata standards commonly used for documenting
 
 # 4. Completing the Metadata
 
-Once all data and documentation materials have been assembled, organized, and verified, they should be documented in accordance with the relevant metadata standards - DDI-C for the data, and DCMI for external resources. This ensures the creation of structured, machine-readable metadata documents that are saved in XML and JSON formats. Structured, machine-readable metadata facilitates preservation, discovery, and dissemination  of data and resources through online searchable catalogs. 
+Once all data and documentation materials have been assembled, organized, and verified, they should be documented in accordance with the relevant metadata standards: DDI Codebook (DDI-C) for datasets and Dublin Core Metadata Initiative (DCMI) standards for external resources. This process produces structured, machine-readable metadata that can be stored in XML (Extensible Markup Language) and JSON (JavaScript Object Notation) formats. Structured metadata supports the long-term preservation of data and documentation in repositories, enables metadata exchange and interoperability across catalogs, and enhances the discovery, access, and dissemination of data and related resources through searchable online platforms.
 
 A thorough completion of the DDI-C and DCMI elements will significantly raise the value of the archiving work by providing users with the necessary information to put the study into its proper context and to understand its purpose.
 
+
 ## Completing the Study Documentation
-The DDI-C metadata standard provides structured metadata for a dataset, capturing information on the identification, authorship, ownership, purpose, background methodologies, source information, provenance, quality control, access, physical file structures, variables/variable groupings, and related materials of a single dataset. Generating a DDI metadata codebook requires the completion of this information organized into five key sections: Document Description, Study Description, File Description, Variable Description, Variable Groups, and External Resources.
+The DDI-C metadata standard provides structured metadata for a dataset, capturing information on the identification, authorship, ownership, purpose, background methodologies, source information, provenance, quality control, access, physical file structures, variables/variable groupings, and related materials of a single dataset. Generating DDI-C compliant metadata requires the completion of this information organized into five key sections: Document Description, Study Description, File Description, Variable Description, Variable Groups, and External Resources.
 
 The Metadata Editor is a specialized tool designed to create structured, machine-readable metadata that complies with internationally recognized metadata standards. This section introduces the key metadata elements required for creating comprehensive, structured metadata for microdata. It explains why such metadata is important and links to the Metadata Editor User Guide for detailed, step-by-step instructions for completing each section in the Metadata Editor.
 
 ### 4.1. Good Practices for Completing the Document Description
-Documenting a study using the DDI-Codebook (DDI-C) and Dublin Core (DCMI) metadata standards involves creating a structured metadata record that is stored in an XML (Extensible Markup Language) file as well as JSON. This metadata file serves as the machine-readable representation of the study metadata and can be used by data catalogs, repositories, and other systems to discover, display, exchange, and preserve metadata.
-
 The Document Description section contains metadata about the XML or JSON metadata record itself rather than the study being documented. In other words, it describes the metadata document, its authorship, and its version history.
 
 As a best practice, the Document Description should capture information such as:
@@ -980,7 +998,7 @@ The DDI requires completion of the following sections: Document Description, Stu
 
 | Field | DDI Element | Description | Example |
 |---|---|---|---|
-| Other Forms of Data Appraisal | `dataAppr` |Document other issues pertaining to data appraisal. Describe other actions taken to assess reliability or quality, including post-enumeration surveys, comparisons with other sources, and data quality tables. | Data quality tables reviewed age distributions, missing values, sex ratios at birth, population pyramids, and anthropometry scatter plots. |
+| Other Forms of Data Appraisal | `dataAppr` |Document other issues pertaining to data appraisal. Describe other actions taken to assess reliability or quality, including post-enumeration surveys, comparisons with other sources, and data quality tables. Document both the procedures that were planned and any important deviations in implementation. Explain known limitations and their implications so users can judge whether the data are suitable for their intended analysis.| Data quality tables reviewed age distributions, missing values, sex ratios at birth, population pyramids, and anthropometry scatter plots. |
 | Response Rate | `respRate` | The percentage of sample members who provided information. <br><br>Report household or unit response rates based on the original sample. Provide rates by stratum when possible and ensure consistency with sample size and records in the data. | Household response rate: 96.3%; women response rate: 96.0%; children response rate: 97.7%. This is a synthetic dataset; the "response rate" is 100%. |
 | Estimate of Sampling Error | `EstSmpErr` | Measure of how precisely one can estimate a population value from a given sample. For sample surveys, describe sampling error calculations, indicators, software, methods, and reports or programs provided as external resources. | Sampling errors were calculated using the SPSS Complex Samples module and Taylor linearization method. |
 
@@ -1057,9 +1075,9 @@ For example, the Study Description may document the following elements that woul
 
 Without adequate documentation, users may incorrectly interpret findings, make invalid comparisons, or draw conclusions that are inconsistent with the data's scope, context, and methodological limitations.
 
-**Supports AI-Powered Discovery and Analysis**
+**Supports Automated Discovery and Analysis**
 
-As data catalogs increasingly incorporate AI-powered search and analytical tools, detailed study-level metadata becomes even more important. AI systems rely on information in the Study Description to understand the subject matter, population, methodology, and coverage of a dataset. This enables them to make relevant and meaningful recommendations, improve search results and dataset discovery.
+As data catalogs increasingly incorporate automated search and analytical tools, detailed study-level metadata becomes even more important. Automated systems rely on information in the Study Description to understand the subject matter, population, methodology, and coverage of a dataset. This enables them to make relevant and meaningful recommendations, improve search results and dataset discovery.
 
 **Example**
 
@@ -1101,7 +1119,7 @@ Well-documented file descriptions:
 - **Support reproducibility** by recording details that may not be apparent from the data alone.
 - Facilitate **long-term preservation and reuse** of the dataset.
 - Improve **discoverability and usability** in data catalogs and repositories.
-- **Enable AI-powered search and analysis tools** to better understand the structure and characteristics of the data.
+- **Enable automated search and analysis tools** to better understand the structure and characteristics of the data.
 
 The File Description section is also an important component of data quality documentation. Information about missing data, validation rules, consistency checks, editing procedures, and quality assessments **helps users evaluate the reliability and limitations** of the dataset.
 
@@ -1143,7 +1161,7 @@ The DDI-Codebook Variable Description section captures detailed metadata about e
 Comprehensive variable documentation is essential because 
 - It **provides the context required to accurately interpret, analyze, and reuse data**. Variable descriptions preserve the meaning, origin, and construction of each variable, ensuring that datasets remain understandable long after data collection has been completed. 
 - They also **improve discoverability in data catalogs and support reproducible research** by documenting how variables were collected, coded, and, where applicable, derived. 
-- Moreover, **modern AI-powered catalogs, search engines, and data assistants rely heavily on metadata** to find relevant datasets and variables. Without this information, AI may apply inappropriate analytical methods or draw incorrect conclusions.
+- Moreover, **modern automated catalogs, search engines, and data assistants rely heavily on metadata** to find relevant datasets and variables. Without this information, automated techniques may apply inappropriate analytical methods or draw incorrect conclusions.
 
 Beyond supporting interpretation and reuse, **documenting variables contributes to data quality**. The process of reviewing and describing variables often helps identify inconsistencies, coding errors, undocumented transformations, unclear labels, and discrepancies between the questionnaire and the dataset. As a result, variable documentation serves as an important quality assurance step, improving the accuracy, reliability, and usability of the data.
 
@@ -1178,7 +1196,7 @@ Well-designed variable groups can:
 - Help users quickly identify variables relevant to their research
 - Support thematic browsing and searching in data catalogs
 - Provide additional context about the organization of the questionnaire or study
-- Enhance machine-readable metadata for AI-powered search and discovery tools
+- Enhance machine-readable metadata for automated search and discovery tools
 
 **Example**
 
@@ -1203,7 +1221,7 @@ Together, the Document Description, Study Description, File Description, Variabl
 
 These metadata elements improve data quality by encouraging a systematic review of the data and its documentation, while also supporting long-term preservation, discoverability, and reuse. Rich metadata ensures that datasets remain understandable and usable long after the original project team is no longer available, preserving valuable institutional knowledge and context.
 
-Comprehensive metadata also enables data catalogs, repositories, and AI-powered tools to more effectively locate, interpret, connect, and analyze data resources. The Metadata Editor streamlines this process by providing an efficient way to create standards-compliant, machine-readable metadata that can be shared, published, exchanged, and preserved over time.
+Comprehensive metadata also enables data catalogs, repositories, and automated tools to more effectively locate, interpret, connect, and analyze data resources. The Metadata Editor streamlines this process by providing an efficient way to create standards-compliant, machine-readable metadata that can be shared, published, exchanged, and preserved over time.
 
 ::: tip Documenting microdata in the Metadata Editor
 To generate structured metadata for datasets using the Metadata Editor, you will need to:
@@ -1263,7 +1281,9 @@ For more information on creating variable groups in the Metadata Editor, see the
 
 The External Resources section is used to document and describe materials that are related to a dataset, study, project, or data collection but exist outside the primary data files. These resources may include questionnaires, data collection instruments, interviewer or field manuals, reports, publications, methodological documents, technical papers, tabulations, maps, training materials, codebooks, data processing guidelines, and other supporting documentation that provides additional context for understanding and using the data.
 
-External resources are typically documented using the Dublin Core Metadata Initiative (DCMI) standard, which provides a simple and widely adopted framework for describing digital resources. Key metadata elements include:
+External resources are typically documented using the Dublin Core Metadata Initiative (DCMI) standard, which provides a simple and widely adopted framework for describing digital resources. DCMI is a compact metadata standard used here to describe related resources such as questionnaires, manuals, reports, scripts, photographs, and maps.
+
+Key metadata elements include:
 
 - Resource title
 - Creator
@@ -1319,13 +1339,14 @@ External resources are typically documented using the Dublin Core Metadata Initi
 | Field | DDI Element | Description | Example |
 |---|---|---|---|
 | Subjects | `subjects` | Resource subjects. | Sampling; Questionnaire design; Fieldwork; Data processing |
-### Why Is This Important?
+### Why is This Important?
 
 - Documenting external resources helps **preserve valuable contextual information that may not be captured within the data files themselves**.
 - It enables users to **locate**, **access**, and **understand** supporting materials that provide important information about the data, its production, methodology, processing, quality, and intended use.
+- Well-documented access and rights information provides users with a clear understanding of who can access the resource, under what conditions, and any restrictions governing its use, redistribution, or reuse.
 - Comprehensive documentation of external resources improves the **discoverability** of data and related materials in catalogs and repositories.
 - It supports **long-term preservation** by ensuring that critical documentation and supporting resources remain linked to the data over time.
-- Well-documented external resources also enable **AI-powered tools, search systems, and metadata platforms to connect datasets with the documentation required for accurate interpretation, analysis, reproducibility, and reuse**.
+- Well-documented external resources also enable **automated tools, search systems, and metadata platforms to connect datasets with the documentation required for accurate interpretation, analysis, reproducibility, and reuse**.
 
 ## Importing External Resources
 
@@ -1362,9 +1383,9 @@ The next section explores metadata quality assessment and presents some recommen
 title: Microdata Documentation Quality Review Checklist
 description: A practical checklist for reviewing the completeness, consistency, quality, and usability of microdata metadata and supporting documentation.
 ---
-# 6. Quality Assessment
+# 6. Metadata Quality Assessment
 
-An **independent review** of the data and metadata is highly recommended prior to publishing the final output. There are two recommended methods to conduct a quality assessment.
+An **independent review** of the metadata is highly recommended prior to publishing the final output. There are two recommended methods to conduct a quality assessment. The review should consider relevant dimensions such as accuracy, reliability, coherence, comparability, timeliness, accessibility, usability, interpretability, and discoverability.
 
 ### I. Metadata Editor Assessment Tool
 
@@ -1793,8 +1814,8 @@ An online catalog provides several important benefits not limited to the followi
 
 Open-source cataloging platforms such as NADA (National Data Archive) can readily ingest metadata documented using the DDI Codebook (DDI-C) and Dublin Core (DCMI) standards. Once imported, the metadata can be published through a searchable web interface, alongside data files, documentation, questionnaires, reports, and other related resources.
 
-Detailed guidance on setting up and publishing metadata to a NADA catalog is available in the NADA Documentation:
-- [NADA Documentation](https://nada.ihsn.org/)
+Detailed guidance on adding metadata and data content to a NADA catalog is available in the NADA Documentation:- 
+- [NADA Documentation](https://ihsn.github.io/nada-documentation/admin-guide/content/microdata.html)
 
 Additional Resources
 - [International Household Survey Network (IHSN) Data Archiving Resources](https://ihsn.org/archiving)
@@ -1824,11 +1845,11 @@ Effective data curation, archiving, and dissemination extend beyond simply prese
 
 This guide has introduced the key concepts and processes involved in preparing microdata and related resources for cataloging and dissemination. From organizing repository structures and assessing data readiness, to documenting datasets with **DDI-C** compliant metadata, describing external resources using **DCMI** standards, conducting metadata quality assessments, and generating machine-readable metadata for publication, each step contributes to making data more discoverable, accessible, interoperable, and reusable.
 
-The value of metadata standards extends beyond documentation. By transforming metadata into structured, machine-readable formats, datasets become visible and understandable to search engines, data catalogs, repositories, applications, and AI systems. This enables datasets to be discovered, linked, and reused across platforms and communities that may never directly access the original repository, significantly expanding the reach and impact of the data.
+The value of metadata standards extends beyond documentation. By transforming metadata into structured, machine-readable formats, datasets become visible and understandable to search engines, data catalogs, repositories, applications, and automated discovery systems. This enables datasets to be discovered, linked, and reused across platforms and communities that may never directly access the original repository, significantly expanding the reach and impact of the data.
 
 By adopting the guidelines and practices described in this guide, and leveraging open-source tools such as **sdcMicro**, the **Metadata Editor**, and **NADA**, data producers and curators can create high-quality, standards-compliant metadata that supports long-term preservation, enhances machine-driven discovery, facilitates integration with broader data ecosystems, and maximizes the value of data assets.
 
-Ultimately, well-documented data are more than a record of what was collected. They provide the context, transparency, and evidence needed for users, applications, and AI systems to find, understand, trust, reproduce, and reuse data effectively. In doing so, metadata serves as the bridge between data preservation and data utilization, ensuring that valuable data resources remain discoverable, accessible, and meaningful for years to come.
+Ultimately, well-documented data are more than a record of what was collected. They provide the context, transparency, and evidence needed for users, applications, and automated systems to find, understand, trust, reproduce, and reuse data effectively. In doing so, metadata serves as the bridge between data preservation and data utilization, ensuring that valuable data resources remain discoverable, accessible, and meaningful for years to come.
 
 ---
 
