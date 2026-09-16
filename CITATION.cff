@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "A Quick Reference Guide for Microdata Archivists"
+abstract: "Documentation and tooling for microdata archivists built with VitePress."
+authors:
+  - family-names: "Machingauta"
+    given-names: "CM"
+    affiliation: "World Bank"
+    email: "cmachingauta@worldbank.org"
+version: "1.0.0"
+date-released: "2026-09-16"
+license: MIT
+repository-code: "https://github.com/worldbank/data-archivist-guide"
+keywords:
+  - "microdata"
+  - "archivist"
+  - "documentation"
+  - "world bank"

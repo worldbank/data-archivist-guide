@@ -24,7 +24,9 @@ These updates reflect current tools, standards, and practices for data curation,
 
 [^1]: The Quick Reference Guide for Data Archivists. Publisher: The International Household Survey Network (IHSN). The World Bank, Development Data Group (DECDG) is a member of the IHSN Secretariat.
 
-The guide is a product of The World Bank Group Chief Statistician's Office - Development Data Group (DECDG). License: **CC BY 4.0**
+The guide is a product of The World Bank Group Chief Statistician's Office - Development Data Group (DECDG). 
+
+Citation: World Bank Group Chief Statistician's Office (DECDG). 2026. *Quick Reference Guide for Microdata Archivists: Documenting Data for Long-Term Preservation, Discovery, and Reuse*. Washington, DC: World Bank Group. CC BY 4.0.
 
 
 > **Disclaimer**
