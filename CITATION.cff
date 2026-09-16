@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "A Quick Reference Guide for Microdata Archivists"
+title: "The Quick Reference Guide for Microdata Archivists"
 abstract: "Documentation and tooling for microdata archivists built with VitePress."
 authors:
   - family-names: "Machingauta"
