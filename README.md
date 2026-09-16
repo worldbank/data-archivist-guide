@@ -1,6 +1,6 @@
-# Data Archivist Guide
+# A Quick Reference Guide for Microdata Archivists 
 
-Quick Reference Guide for Data Archivists — documentation site built with [VitePress](https://vitepress.dev/).
+A Quick Reference Guide for Microdata Archivists — documentation site built with [VitePress](https://vitepress.dev/).
 
 ## Development
 
