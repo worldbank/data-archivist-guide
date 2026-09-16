@@ -1,6 +1,5 @@
 # The Quick Reference Guide for Microdata Archivists 
-
-The Quick Reference Guide for Microdata Archivists — documentation site built with [VitePress](https://vitepress.dev/).
+This repository hosts the source code and documentation content for the Quick Reference Guide for Microdata Archivists, a documentation site built with [VitePress](https://vitepress.dev/). It serves as the authoritative source for creating, updating, and publishing the guide.
 
 ## Development
 
