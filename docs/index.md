@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Quick Reference Guide for Microdata Archivists
+  name: The Quick Reference Guide for Microdata Archivists
   tagline: World Bank Group Chief Statistician's Office (DECDG)
   text: Documenting Data for Long-Term Preservation, Discovery, and Reuse
   
