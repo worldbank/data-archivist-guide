@@ -1,8 +1,36 @@
-# The Quick Reference Guide for Microdata Archivists 
+# Quick Reference Guide for Microdata Archivists
 
-This repository hosts the source code and documentation content for the Quick Reference Guide for Microdata Archivists, a documentation site built with [VitePress](https://vitepress.dev/). It serves as the authoritative source for creating, updating, and publishing the guide.
+The **Quick Reference Guide for Microdata Archivists** is a practical resource designed to support the documentation, preservation, discovery, access, and reuse of microdata and related research data assets. The guide reflects internationally recognized good practices in data curation, metadata management, and digital preservation.
 
-## Development
+Intended for microdata archivists, data curators, metadata specialists, repository administrators, and data stewards, the guide provides concise, standards-based guidance for managing data and metadata throughout the data lifecycle.
+
+## Objectives
+
+The guide aims to:
+
+- Provide practical guidance for common archiving and curation activities.
+- Promote the consistent application of metadata standards, including the Data Documentation Initiative (DDI).
+- Support data quality, discoverability, interoperability, preservation, and responsible data sharing.
+- Document recommended workflows, procedures, and best practices for managing microdata collections.
+- Serve as a reference resource for institutions responsible for preserving and disseminating research data.
+
+## About This Repository
+
+This repository contains the source code and documentation content used to build and publish the Quick Reference Guide for Microdata Archivists.
+
+The documentation site is built with [VitePress](https://vitepress.dev/) and serves as the authoritative source for maintaining, reviewing, and publishing guide content.
+
+Repository contents include:
+
+- Markdown source files for guide content.
+- VitePress configuration and site assets.
+- Templates, examples, and reference materials.
+- Build and deployment scripts.
+- Version-controlled documentation used to generate published outputs.
+
+## Getting Started
+
+### Install Dependencies
 
 ```bash
 npm install
@@ -60,3 +88,10 @@ docs/
 ├── index.md            # Home page
 └── *.md                # Guide chapters
 ```
+
+## Contact
+microdata[at]worldbank.org
+
+## License
+
+This project is licensed under the MIT License together with the [World Bank IGO Rider](WB-IGO-RIDER.md). The Rider is purely procedural: it reserves all privileges and immunities enjoyed by the World Bank, without adding restrictions to the MIT permissions. Please review both files before using, distributing or contributing.
