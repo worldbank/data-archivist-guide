@@ -1,9 +1,9 @@
 
 # Acknowledgements
 
-Version 2026-08 is a revision of Version 2019-04[^1], originally authored by Olivier Dupriez (World Bank) and subsequently updated by Diana Marcella Sanchez Castro and Matthew Welch (The World Bank). Their contributions to the guide's original structure, content, and conceptual framework are gratefully acknowledged.
+Version 2026-08 is a revision of Version 2019-04[^1], originally authored by Olivier Dupriez (World Bank) and subsequently updated by Diana Marcella Sanchez Castro and Matthew Welch (The World Bank Group). Their contributions to the guide's original structure, content, and conceptual framework are gratefully acknowledged.
 
-This edition was revised and updated by Cathrine Machingauta and Mehmood Asghar. Key enhancements include:
+This edition was revised and updated by Cathrine Machingauta and Mehmood Asghar (World Bank Group). Key enhancements include:
 
 - Updated references to World Bank tools that have replaced tools mentioned in earlier versions.
 - Adoption of DDI-Codebook, now an ISO standard, replacing references to DDI 1.6 used in the original guide.
