@@ -12,7 +12,7 @@ hero:
       link: /introduction    
     - theme: alt
       text: Download Guide (PDF)
-      link: /microdata-archivist-guide/media/Guide-for-Data-Archivists.pdf
+      link: /microdata-archivist-guide/Guide-for-Data-Archivists.pdf
     - theme: alt
       text: Metadata Editor
       link: https://worldbank.github.io/metadata-editor-docs/
