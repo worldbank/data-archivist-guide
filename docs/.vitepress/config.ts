@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 import footnote from 'markdown-it-footnote'
 
 export default defineConfig({
-  title: 'Guide for Data Archivists',
-  description: 'Quick Reference Guide for Data Archivists',
+  title: 'Guide for Microdata Archivists',
+  description: 'Quick Reference Guide for Microdata Archivists',
   lang: 'en-US',
   base: '/microdata-archivist-guide/',
   cleanUrls: true,
