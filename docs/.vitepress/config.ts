@@ -6,7 +6,7 @@ export default defineConfig({
   title: 'Guide for Data Archivists',
   description: 'Quick Reference Guide for Data Archivists',
   lang: 'en-US',
-  base: '/data-archivist-guide/',
+  base: '/microdata-archivist-guide/',
   cleanUrls: true,
   lastUpdated: true,
 

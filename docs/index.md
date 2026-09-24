@@ -21,11 +21,11 @@ hero:
       link: https://nada.ihsn.org/
 
 features:
-  - icon: <img src="/data-archivist-guide/media/curation_wf.svg"/> 
+  - icon: <img src="/microdata-archivist-guide/media/curation_wf.svg"/>
     title: Microdata Curation Workflow
     details: A recommended end-to-end workflow for preparing and organizing data, creating metadata, assessing quality, and publishing resources for discovery and reuse.
     link: /preparing-data
-  - icon: <img src="/data-archivist-guide/media/metadata_standards.svg"/> 
+  - icon: <img src="/microdata-archivist-guide/media/metadata_standards.svg"/>
     title: Metadata Standards
     details: Document microdata using internationally recognized metadata standards, including Data Documentation Initiative (DDI-Codebook) and Dublin Core Metadata Initiative (DCMI).
     link: /creating-structured-metadata
