@@ -58,7 +58,7 @@ The following tools and resources help you implement the processes in your data 
       <p>Create rich, structured, standards-compliant metadata using an open-source, multi-standard metadata editor.</p>
     </article>
   </a>
-  <a href="/pushing-to-nada" class="VPLink link no-icon VPFeature">
+  <a href="https://nada.ihsn.org/" class="VPLink link no-icon VPFeature">
     <article class="box">
       <div class="icon"><img src="/media/nada.png" alt="NADA Cataloging Platform" style="width: 70px; height: 60px;"></div>
       <h2 class="title">NADA Cataloging Platform</h2>
